@@ -1,0 +1,2 @@
+10:44:24.252 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing CONNECTEDSEGMENTS
+10:45:18.133 [main] ERROR h.b.m.t.b.e.o.EpsilonModelOperationFactory - Operation PosLength not supported.

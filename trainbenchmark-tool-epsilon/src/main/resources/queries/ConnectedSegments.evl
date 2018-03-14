@@ -1,0 +1,25 @@
+context Sensor {
+    /**
+	 * ConnectedSegments requires each sensor to
+ 	 * have at most 5 segments. The corresponding query checks
+	 * for “chains” similar to a transitive closure. This is a common
+	 * use case in model validation.
+	 */
+	constraint ConnectedSegments {
+        // The check is "weird" beacuse the benchmark expects both the sensor that failes and the chain of
+        // segments that caused the break;
+        check {
+		    for (s in self.monitors) {
+		        if (s.isTypeOf(Segment)) {
+				    // Find the first 5+ segment chain
+	               	var chain = s.closure(seg | seg.connectsTo.select(te : Segment | te.monitoredBy.includes(self)));
+	               	if (chain.size() >= 5) {
+                        self.~match = new Native("ConnectedSegmentsInjectMatch")(self, s, chain.at(0), chain.at(1), chain.at(2), chain.at(3), chain.at(3));
+	               		return false;
+	               	}
+	            }
+        		}
+        		return true;
+        }
+    }
+}

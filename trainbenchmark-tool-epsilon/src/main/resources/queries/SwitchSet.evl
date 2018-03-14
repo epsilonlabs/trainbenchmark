@@ -1,0 +1,23 @@
+context Route {
+    /**
+     * SwitchSet requires that an entry semaphore of
+     * an active route may show GO only if all switches along
+     * the route are in the position prescribed by the route. The
+     * corresponding query tests the efficiency of navigation and
+     * filtering operations.
+     */
+     guard: self.active and self.entry.isDefined()
+     constraint SwitchSet {
+        check {
+            if (self.entry.signal == Signal#GO) {
+                for (swP in self.follows) {
+                    if (swP.target.currentPosition <> swP.position) {
+                        self.~match = new Native("SwitchSetMatch")(self.entry, self, swP, swP.target);
+                        return false;
+                    }
+                }
+            }
+            return true;
+        }
+     }
+}

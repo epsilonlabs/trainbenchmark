@@ -52,4 +52,5 @@ ext {
 	tinkerGraphVersion = '3.2.5'
 	viatraVersion = '1.6.1'
 	xtextVersion = '2.10.0'
+	epsilonVersion = '1.5.0-20180201.215443-239'
 }

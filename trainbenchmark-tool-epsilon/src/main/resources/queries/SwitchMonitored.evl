@@ -1,0 +1,20 @@
+context Switch {
+    /**
+     * SwitchMonitored requires every switch to have
+     * at least one sensor connected to it. The corresponding
+     * query checks whether a vertex is connected to another
+     * vertex. This pattern is common in more complex queries,
+     * e.g. it is used in the RouteSensor and Semaphore-
+     * Neighbor queries.
+     */
+     constraint SwitchMonitored {
+        
+        check {
+            if (self.monitoredBy.isEmpty()) {
+                self.~match = new Native("SwitchMonitoredMatch")(self);
+                return false;
+            }
+            return true;
+        }
+     }
+}

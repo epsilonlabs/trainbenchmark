@@ -1,0 +1,342 @@
+09:10:54.168 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing CONNECTEDSEGMENTS
+09:10:54.199 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing POSLENGTH
+09:10:54.200 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing ROUTESENSOR
+09:10:54.208 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SEMAPHORENEIGHBOR
+09:10:54.208 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SWITCHSET
+09:10:54.208 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SWITCHMONITORED
+09:19:22.878 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing CONNECTEDSEGMENTS
+09:19:22.900 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing POSLENGTH
+09:19:22.901 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing ROUTESENSOR
+09:19:22.901 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SEMAPHORENEIGHBOR
+09:19:22.902 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SWITCHSET
+09:19:22.902 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SWITCHMONITORED
+09:20:05.934 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing POSLENGTH
+09:20:05.935 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing POSLENGTH_INJECT
+09:20:09.264 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing POSLENGTH_REPAIR
+09:20:09.267 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SEMAPHORENEIGHBOR
+09:20:09.267 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SEMAPHORENEIGHBOR_INJECT
+09:20:09.272 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SWITCHMONITORED
+09:20:09.272 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SWITCHMONITORED_INJECT
+09:20:09.276 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SEMAPHORENEIGHBOR_REPAIR
+09:20:09.279 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SWITCHMONITORED_REPAIR
+09:20:09.281 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing CONNECTEDSEGMENTS
+09:20:09.282 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing CONNECTEDSEGMENTS_INJECT
+09:20:09.284 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing CONNECTEDSEGMENTS_REPAIR
+09:20:09.287 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing ROUTESENSOR
+09:20:09.288 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing ROUTESENSOR_INJECT
+09:20:09.292 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing ROUTESENSOR_REPAIR
+09:20:09.294 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SWITCHSET
+09:20:09.294 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SWITCHSET_INJECT
+09:20:09.296 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SWITCHSET_REPAIR
+09:20:09.297 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing CONNECTEDSEGMENTS
+09:20:09.298 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing POSLENGTH
+09:20:09.298 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing ROUTESENSOR
+09:20:09.298 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SEMAPHORENEIGHBOR
+09:20:09.298 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SWITCHSET
+09:20:09.298 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SWITCHMONITORED
+09:20:09.299 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing CONNECTEDSEGMENTS_INJECT
+09:20:09.299 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing POSLENGTH_INJECT
+09:20:09.299 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing ROUTESENSOR_INJECT
+09:20:09.299 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SEMAPHORENEIGHBOR_INJECT
+09:20:09.299 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SWITCHSET_INJECT
+09:20:09.300 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SWITCHMONITORED_INJECT
+09:20:09.301 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing CONNECTEDSEGMENTS_REPAIR
+09:20:09.301 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing POSLENGTH_REPAIR
+09:20:09.302 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing ROUTESENSOR_REPAIR
+09:20:09.302 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SEMAPHORENEIGHBOR_REPAIR
+09:20:09.302 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SWITCHSET_REPAIR
+09:20:09.302 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SWITCHMONITORED_REPAIR
+09:49:43.209 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing CONNECTEDSEGMENTS
+09:49:43.226 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing POSLENGTH
+09:49:43.226 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing ROUTESENSOR
+09:49:43.226 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SEMAPHORENEIGHBOR
+09:49:43.226 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SWITCHSET
+09:49:43.226 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SWITCHMONITORED
+09:50:57.530 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing POSLENGTH
+09:50:57.530 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing POSLENGTH_INJECT
+09:50:57.534 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing POSLENGTH_REPAIR
+09:50:57.538 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SEMAPHORENEIGHBOR
+09:50:57.538 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SEMAPHORENEIGHBOR_INJECT
+09:50:57.541 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SWITCHMONITORED
+09:50:57.541 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SWITCHMONITORED_INJECT
+09:50:57.544 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SEMAPHORENEIGHBOR_REPAIR
+09:50:57.548 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SWITCHMONITORED_REPAIR
+09:50:57.551 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing CONNECTEDSEGMENTS
+09:50:57.551 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing CONNECTEDSEGMENTS_INJECT
+09:50:57.553 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing CONNECTEDSEGMENTS_REPAIR
+09:50:57.555 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing ROUTESENSOR
+09:50:57.556 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing ROUTESENSOR_INJECT
+09:50:57.568 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing ROUTESENSOR_REPAIR
+09:50:57.571 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SWITCHSET
+09:50:57.572 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SWITCHSET_INJECT
+09:50:57.575 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SWITCHSET_REPAIR
+09:50:57.578 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing CONNECTEDSEGMENTS
+09:50:57.578 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing POSLENGTH
+09:50:57.578 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing ROUTESENSOR
+09:50:57.578 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SEMAPHORENEIGHBOR
+09:50:57.578 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SWITCHSET
+09:50:57.579 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SWITCHMONITORED
+09:50:57.579 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing CONNECTEDSEGMENTS_INJECT
+09:50:57.579 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing POSLENGTH_INJECT
+09:50:57.579 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing ROUTESENSOR_INJECT
+09:50:57.579 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SEMAPHORENEIGHBOR_INJECT
+09:50:57.579 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SWITCHSET_INJECT
+09:50:57.579 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SWITCHMONITORED_INJECT
+09:50:57.581 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing CONNECTEDSEGMENTS_REPAIR
+09:50:57.581 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing POSLENGTH_REPAIR
+09:50:57.581 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing ROUTESENSOR_REPAIR
+09:50:57.581 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SEMAPHORENEIGHBOR_REPAIR
+09:50:57.581 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SWITCHSET_REPAIR
+09:50:57.581 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SWITCHMONITORED_REPAIR
+10:45:34.036 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing CONNECTEDSEGMENTS
+10:45:34.062 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing POSLENGTH
+10:45:34.062 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing ROUTESENSOR
+10:45:34.062 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SEMAPHORENEIGHBOR
+10:45:34.063 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SWITCHSET
+10:45:34.063 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SWITCHMONITORED
+10:46:09.496 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing POSLENGTH
+10:46:09.497 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing POSLENGTH_INJECT
+10:46:09.501 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing POSLENGTH_REPAIR
+10:46:09.504 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SEMAPHORENEIGHBOR
+10:46:09.504 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SEMAPHORENEIGHBOR_INJECT
+10:46:09.507 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SWITCHMONITORED
+10:46:09.507 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SWITCHMONITORED_INJECT
+10:46:09.510 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SEMAPHORENEIGHBOR_REPAIR
+10:46:09.514 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SWITCHMONITORED_REPAIR
+10:46:09.517 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing CONNECTEDSEGMENTS
+10:46:09.517 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing CONNECTEDSEGMENTS_INJECT
+10:46:09.520 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing CONNECTEDSEGMENTS_REPAIR
+10:46:09.523 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing ROUTESENSOR
+10:46:09.523 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing ROUTESENSOR_INJECT
+10:46:09.529 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing ROUTESENSOR_REPAIR
+10:46:09.532 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SWITCHSET
+10:46:09.532 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SWITCHSET_INJECT
+10:46:09.535 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SWITCHSET_REPAIR
+10:46:09.537 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing CONNECTEDSEGMENTS
+10:46:09.538 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing POSLENGTH
+10:46:09.538 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing ROUTESENSOR
+10:46:09.538 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SEMAPHORENEIGHBOR
+10:46:09.538 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SWITCHSET
+10:46:09.538 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SWITCHMONITORED
+10:46:09.538 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing CONNECTEDSEGMENTS_INJECT
+10:46:09.538 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing POSLENGTH_INJECT
+10:46:09.538 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing ROUTESENSOR_INJECT
+10:46:09.538 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SEMAPHORENEIGHBOR_INJECT
+10:46:09.539 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SWITCHSET_INJECT
+10:46:09.539 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SWITCHMONITORED_INJECT
+10:46:09.541 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing CONNECTEDSEGMENTS_REPAIR
+10:46:09.542 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing POSLENGTH_REPAIR
+10:46:09.542 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing ROUTESENSOR_REPAIR
+10:46:09.542 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SEMAPHORENEIGHBOR_REPAIR
+10:46:09.542 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SWITCHSET_REPAIR
+10:46:09.542 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SWITCHMONITORED_REPAIR
+10:48:57.778 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing CONNECTEDSEGMENTS
+10:48:58.042 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing POSLENGTH
+10:48:58.043 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing ROUTESENSOR
+10:48:58.046 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SEMAPHORENEIGHBOR
+10:48:58.046 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SWITCHSET
+10:48:58.046 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SWITCHMONITORED
+10:50:04.423 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing POSLENGTH
+10:50:04.424 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing POSLENGTH_INJECT
+10:50:04.427 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing POSLENGTH_REPAIR
+10:50:04.431 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SEMAPHORENEIGHBOR
+10:50:04.431 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SEMAPHORENEIGHBOR_INJECT
+10:50:04.434 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SWITCHMONITORED
+10:50:04.434 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SWITCHMONITORED_INJECT
+10:50:04.438 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SEMAPHORENEIGHBOR_REPAIR
+10:50:04.442 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SWITCHMONITORED_REPAIR
+10:50:04.445 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing CONNECTEDSEGMENTS
+10:50:04.446 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing CONNECTEDSEGMENTS_INJECT
+10:50:04.449 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing CONNECTEDSEGMENTS_REPAIR
+10:50:04.453 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing ROUTESENSOR
+10:50:04.453 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing ROUTESENSOR_INJECT
+10:50:04.456 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing ROUTESENSOR_REPAIR
+10:50:04.458 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SWITCHSET
+10:50:04.458 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SWITCHSET_INJECT
+10:50:04.462 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SWITCHSET_REPAIR
+10:50:04.468 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing CONNECTEDSEGMENTS
+10:50:04.468 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing POSLENGTH
+10:50:04.468 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing ROUTESENSOR
+10:50:04.469 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SEMAPHORENEIGHBOR
+10:50:04.469 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SWITCHSET
+10:50:04.470 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SWITCHMONITORED
+10:50:04.470 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing CONNECTEDSEGMENTS_INJECT
+10:50:04.470 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing POSLENGTH_INJECT
+10:50:04.471 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing ROUTESENSOR_INJECT
+10:50:04.471 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SEMAPHORENEIGHBOR_INJECT
+10:50:04.471 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SWITCHSET_INJECT
+10:50:04.472 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SWITCHMONITORED_INJECT
+10:50:04.473 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing CONNECTEDSEGMENTS_REPAIR
+10:50:04.474 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing POSLENGTH_REPAIR
+10:50:04.474 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing ROUTESENSOR_REPAIR
+10:50:04.474 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SEMAPHORENEIGHBOR_REPAIR
+10:50:04.474 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SWITCHSET_REPAIR
+10:50:04.474 [main] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SWITCHMONITORED_REPAIR
+17:23:13.894 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing CONNECTEDSEGMENTS
+17:23:13.902 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing POSLENGTH
+17:23:13.902 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing ROUTESENSOR
+17:23:13.902 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SEMAPHORENEIGHBOR
+17:23:13.902 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SWITCHSET
+17:23:13.903 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SWITCHMONITORED
+17:23:14.489 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing POSLENGTH
+17:23:14.490 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing POSLENGTH_INJECT
+17:23:14.492 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing POSLENGTH_REPAIR
+17:23:14.493 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SEMAPHORENEIGHBOR
+17:23:14.494 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SEMAPHORENEIGHBOR_INJECT
+17:23:14.495 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SWITCHMONITORED
+17:23:14.495 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SWITCHMONITORED_INJECT
+17:23:14.496 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SEMAPHORENEIGHBOR_REPAIR
+17:23:14.497 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SWITCHMONITORED_REPAIR
+17:23:14.497 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing CONNECTEDSEGMENTS
+17:23:14.499 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing CONNECTEDSEGMENTS_INJECT
+17:23:14.501 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing CONNECTEDSEGMENTS_REPAIR
+17:23:14.502 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing ROUTESENSOR
+17:23:14.502 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing ROUTESENSOR_INJECT
+17:23:14.503 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing ROUTESENSOR_REPAIR
+17:23:14.504 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SWITCHSET
+17:23:14.505 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SWITCHSET_INJECT
+17:23:14.506 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SWITCHSET_REPAIR
+17:23:14.506 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing CONNECTEDSEGMENTS
+17:23:14.507 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing POSLENGTH
+17:23:14.507 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing ROUTESENSOR
+17:23:14.507 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SEMAPHORENEIGHBOR
+17:23:14.507 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SWITCHSET
+17:23:14.507 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SWITCHMONITORED
+17:23:14.508 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing CONNECTEDSEGMENTS_INJECT
+17:23:14.508 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing POSLENGTH_INJECT
+17:23:14.508 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing ROUTESENSOR_INJECT
+17:23:14.509 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SEMAPHORENEIGHBOR_INJECT
+17:23:14.509 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SWITCHSET_INJECT
+17:23:14.509 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SWITCHMONITORED_INJECT
+17:23:14.510 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing CONNECTEDSEGMENTS_REPAIR
+17:23:14.510 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing POSLENGTH_REPAIR
+17:23:14.510 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing ROUTESENSOR_REPAIR
+17:23:14.511 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SEMAPHORENEIGHBOR_REPAIR
+17:23:14.511 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SWITCHSET_REPAIR
+17:23:14.512 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SWITCHMONITORED_REPAIR
+17:30:21.655 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing CONNECTEDSEGMENTS
+17:30:21.662 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing POSLENGTH
+17:30:21.662 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing ROUTESENSOR
+17:30:21.662 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SEMAPHORENEIGHBOR
+17:30:21.663 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SWITCHSET
+17:30:21.663 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SWITCHMONITORED
+17:30:22.088 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing POSLENGTH
+17:30:22.088 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing POSLENGTH_INJECT
+17:30:22.092 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing POSLENGTH_REPAIR
+17:30:22.094 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SEMAPHORENEIGHBOR
+17:30:22.094 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SEMAPHORENEIGHBOR_INJECT
+17:30:22.095 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SWITCHMONITORED
+17:30:22.095 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SWITCHMONITORED_INJECT
+17:30:22.096 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SEMAPHORENEIGHBOR_REPAIR
+17:30:22.097 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SWITCHMONITORED_REPAIR
+17:30:22.097 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing CONNECTEDSEGMENTS
+17:30:22.097 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing CONNECTEDSEGMENTS_INJECT
+17:30:22.099 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing CONNECTEDSEGMENTS_REPAIR
+17:30:22.100 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing ROUTESENSOR
+17:30:22.100 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing ROUTESENSOR_INJECT
+17:30:22.102 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing ROUTESENSOR_REPAIR
+17:30:22.103 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SWITCHSET
+17:30:22.103 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SWITCHSET_INJECT
+17:30:22.104 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SWITCHSET_REPAIR
+17:30:22.105 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing CONNECTEDSEGMENTS
+17:30:22.105 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing POSLENGTH
+17:30:22.106 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing ROUTESENSOR
+17:30:22.106 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SEMAPHORENEIGHBOR
+17:30:22.106 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SWITCHSET
+17:30:22.106 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SWITCHMONITORED
+17:30:22.106 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing CONNECTEDSEGMENTS_INJECT
+17:30:22.106 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing POSLENGTH_INJECT
+17:30:22.107 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing ROUTESENSOR_INJECT
+17:30:22.107 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SEMAPHORENEIGHBOR_INJECT
+17:30:22.107 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SWITCHSET_INJECT
+17:30:22.107 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SWITCHMONITORED_INJECT
+17:30:22.109 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing CONNECTEDSEGMENTS_REPAIR
+17:30:22.109 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing POSLENGTH_REPAIR
+17:30:22.110 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing ROUTESENSOR_REPAIR
+17:30:22.110 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SEMAPHORENEIGHBOR_REPAIR
+17:30:22.110 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SWITCHSET_REPAIR
+17:30:22.110 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SWITCHMONITORED_REPAIR
+17:46:09.393 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing CONNECTEDSEGMENTS
+17:46:09.400 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing POSLENGTH
+17:46:09.401 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing ROUTESENSOR
+17:46:09.401 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SEMAPHORENEIGHBOR
+17:46:09.402 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SWITCHSET
+17:46:09.402 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SWITCHMONITORED
+17:46:09.769 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing POSLENGTH
+17:46:09.769 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing POSLENGTH_INJECT
+17:46:09.772 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing POSLENGTH_REPAIR
+17:46:09.774 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SEMAPHORENEIGHBOR
+17:46:09.775 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SEMAPHORENEIGHBOR_INJECT
+17:46:09.776 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SWITCHMONITORED
+17:46:09.776 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SWITCHMONITORED_INJECT
+17:46:09.777 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SEMAPHORENEIGHBOR_REPAIR
+17:46:09.786 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SWITCHMONITORED_REPAIR
+17:46:09.787 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing CONNECTEDSEGMENTS
+17:46:09.787 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing CONNECTEDSEGMENTS_INJECT
+17:46:09.789 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing CONNECTEDSEGMENTS_REPAIR
+17:46:09.802 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing ROUTESENSOR
+17:46:09.806 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing ROUTESENSOR_INJECT
+17:46:09.826 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing ROUTESENSOR_REPAIR
+17:46:09.829 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SWITCHSET
+17:46:09.830 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SWITCHSET_INJECT
+17:46:09.835 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SWITCHSET_REPAIR
+17:46:09.836 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing CONNECTEDSEGMENTS
+17:46:09.836 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing POSLENGTH
+17:46:09.840 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing ROUTESENSOR
+17:46:09.842 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SEMAPHORENEIGHBOR
+17:46:09.842 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SWITCHSET
+17:46:09.843 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SWITCHMONITORED
+17:46:09.843 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing CONNECTEDSEGMENTS_INJECT
+17:46:09.844 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing POSLENGTH_INJECT
+17:46:09.844 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing ROUTESENSOR_INJECT
+17:46:09.845 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SEMAPHORENEIGHBOR_INJECT
+17:46:09.845 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SWITCHSET_INJECT
+17:46:09.845 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SWITCHMONITORED_INJECT
+17:46:09.847 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing CONNECTEDSEGMENTS_REPAIR
+17:46:09.847 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing POSLENGTH_REPAIR
+17:46:09.848 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing ROUTESENSOR_REPAIR
+17:46:09.848 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SEMAPHORENEIGHBOR_REPAIR
+17:46:09.852 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SWITCHSET_REPAIR
+17:46:09.853 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SWITCHMONITORED_REPAIR
+17:48:48.974 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing CONNECTEDSEGMENTS
+17:48:48.979 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing POSLENGTH
+17:48:48.979 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing ROUTESENSOR
+17:48:48.979 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SEMAPHORENEIGHBOR
+17:48:48.979 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SWITCHSET
+17:48:48.979 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SWITCHMONITORED
+17:48:49.332 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing POSLENGTH
+17:48:49.333 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing POSLENGTH_INJECT
+17:48:49.338 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing POSLENGTH_REPAIR
+17:48:49.343 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SEMAPHORENEIGHBOR
+17:48:49.344 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SEMAPHORENEIGHBOR_INJECT
+17:48:49.346 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SWITCHMONITORED
+17:48:49.346 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SWITCHMONITORED_INJECT
+17:48:49.347 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SEMAPHORENEIGHBOR_REPAIR
+17:48:49.350 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SWITCHMONITORED_REPAIR
+17:48:49.351 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing CONNECTEDSEGMENTS
+17:48:49.352 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing CONNECTEDSEGMENTS_INJECT
+17:48:49.352 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing CONNECTEDSEGMENTS_REPAIR
+17:48:49.353 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing ROUTESENSOR
+17:48:49.353 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing ROUTESENSOR_INJECT
+17:48:49.355 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing ROUTESENSOR_REPAIR
+17:48:49.356 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SWITCHSET
+17:48:49.356 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SWITCHSET_INJECT
+17:48:49.357 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SWITCHSET_REPAIR
+17:48:49.357 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing CONNECTEDSEGMENTS
+17:48:49.358 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing POSLENGTH
+17:48:49.358 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing ROUTESENSOR
+17:48:49.358 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SEMAPHORENEIGHBOR
+17:48:49.358 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SWITCHSET
+17:48:49.358 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SWITCHMONITORED
+17:48:49.358 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing CONNECTEDSEGMENTS_INJECT
+17:48:49.358 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing POSLENGTH_INJECT
+17:48:49.359 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing ROUTESENSOR_INJECT
+17:48:49.359 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SEMAPHORENEIGHBOR_INJECT
+17:48:49.359 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SWITCHSET_INJECT
+17:48:49.359 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SWITCHMONITORED_INJECT
+17:48:49.360 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing CONNECTEDSEGMENTS_REPAIR
+17:48:49.360 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing POSLENGTH_REPAIR
+17:48:49.360 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing ROUTESENSOR_REPAIR
+17:48:49.360 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SEMAPHORENEIGHBOR_REPAIR
+17:48:49.360 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SWITCHSET_REPAIR
+17:48:49.361 [Test worker] INFO  h.b.m.t.b.e.o.EpsilonModelOperationFactory - Executing SWITCHMONITORED_REPAIR

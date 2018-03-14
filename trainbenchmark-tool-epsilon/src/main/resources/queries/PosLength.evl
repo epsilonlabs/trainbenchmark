@@ -1,0 +1,18 @@
+context Segment {
+    /**
+	 * PosLength requires that a segment must have a
+	 * positive length. The corresponding query defines a simple
+	 * property check, a common use case in validation.
+	*/
+	constraint PositiveLength {
+	    check {
+	        if (self.length > 0) {
+	            return true;
+	        }
+	        else {
+                self.~match = new Native("PosLengthMatch")(self);
+                return false;      
+            }
+        }
+    }
+}

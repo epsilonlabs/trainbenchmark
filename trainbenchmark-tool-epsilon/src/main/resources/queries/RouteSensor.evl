@@ -1,0 +1,28 @@
+context Route {
+	
+	/**
+	 * RouteSensor requires that all sensors associated
+	 * with a switch that belongs to a route must also
+	 * be associated directly with the same route. The corresponding
+	 * query checks for the absence of circles, so the
+	 * efficiency of performing navigation and evaluating negative
+	 * conditions is tested.
+	 */
+	constraint RouteSensor {
+		// The check is "weird" because the benchmark expects the partial circle
+		// Route->SwitchPosition->Switch->Sensor to be returned
+		check {
+			self.println("\n\nRoute ");
+			for (swP in self.follows) {
+				var sw = swP.target;
+				for (s in sw.monitoredBy) {
+					if (self.requires.excludes(s)) {
+					    self.~match = new Native("RouteSensorMatch")(self, s, swP, sw);
+						return false;
+					}
+				}
+			}
+			return true;
+		}
+	}
+}
