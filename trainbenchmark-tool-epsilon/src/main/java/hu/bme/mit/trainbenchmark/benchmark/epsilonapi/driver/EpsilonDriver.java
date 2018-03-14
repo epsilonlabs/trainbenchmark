@@ -4,13 +4,15 @@ import hu.bme.mit.trainbenchmark.benchmark.driver.Driver;
 import org.eclipse.epsilon.engine.standalone.model.IModelBuilder;
 import org.eclipse.epsilon.eol.models.IModel;
 
-public class EpsilonDriver extends Driver {
+import java.nio.file.Paths;
 
-	private final IModelBuilder modelBuilder;
+public class EpsilonDriver<T extends IModelBuilder> extends Driver {
+
+	private final T modelBuilder;
 	private final String postfix;
 	protected IModel model;
 
-	public EpsilonDriver(IModelBuilder modelBuilder, String postfix) {
+	public EpsilonDriver(T modelBuilder, String postfix) {
 		this.modelBuilder = modelBuilder;
 		this.postfix = postfix;
 	}
@@ -23,7 +25,7 @@ public class EpsilonDriver extends Driver {
 	public void read(String modelPath) throws Exception {
 		modelBuilder
 			.withName("train")
-			.withModelUri(modelPath);
+			.withModelUri(Paths.get(modelPath));
 		model = modelBuilder.build();
 		model.load();
 	}

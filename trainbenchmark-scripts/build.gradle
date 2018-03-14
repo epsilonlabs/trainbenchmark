@@ -53,14 +53,31 @@ task cleanResults(type: Delete) {
 	}
 }
 
+// Craete a MANIFEST.MF file with classpath to avoid windows max size limits
+task pathingJar(type: Jar) {
+	dependsOn configurations.runtime
+	appendix = 'pathing'
+
+	doFirst {
+		manifest {
+			attributes "Class-Path": configurations.runtime.files.collect {
+				it.toURL().toString().replaceFirst(/file:\/+/, '/')
+			}.join(' ')
+		}
+	}
+}
+
 task benchmark(dependsOn: 'classes', type: JavaExec) {
 	main = 'BenchmarkScript'
 	classpath = sourceSets.main.runtimeClasspath
 }
 
 task generate(dependsOn: 'classes', type: JavaExec) {
-	main = 'GeneratorScript'
-	classpath = sourceSets.main.runtimeClasspath
+	dependsOn pathingJar
+    main = 'GeneratorScript'
+    doFirst {
+		classpath = files(sourceSets.main.output.files, pathingJar.archivePath)
+	}
 }
 
 task individualBenchmark(dependsOn: 'classes', type: JavaExec) {

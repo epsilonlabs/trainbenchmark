@@ -10,6 +10,9 @@ import hu.bme.mit.trainbenchmark.benchmark.test.TrainBenchmarkTest;
 import org.eclipse.epsilon.engine.standalone.EpsilonStandaloneEngineFactory;
 import org.eclipse.epsilon.engine.standalone.model.EmfModelBuilder;
 
+import java.nio.file.Path;
+import java.nio.file.Paths;
+
 public class EpsilonApiTest extends TrainBenchmarkTest {
 
 	/**
@@ -20,8 +23,15 @@ public class EpsilonApiTest extends TrainBenchmarkTest {
 	 */
 	@Override
 	protected BenchmarkResult runTest(final BenchmarkConfigBase bcb) throws Exception {
+		Path currentDir = Paths.get(".");
+		System.out.println(currentDir.toAbsolutePath());
+		//
+		Path metamodelFile = Paths.get("../trainbenchmark-format-emf-model/src/railway.ecore");
+		System.out.println(metamodelFile.normalize());
+		Path fullpath = currentDir.resolve(metamodelFile);
+		System.out.println(fullpath.normalize());
 		EpsilonApiBenchmarkConfigBuilder configBuilder = new EpsilonApiBenchmarkConfigBuilder()
-				.withModelBuilder(new EmfModelBuilder().withMetamodelFile("../../../../../../../../../../../../trainbenchmark-format-emf-model/src/railway.xcore"))
+				.withModelBuilder(new EmfModelBuilder().withMetamodelPath(Paths.get(metamodelFile.toFile().getCanonicalPath())))
 				.withEvlFactory(EpsilonStandaloneEngineFactory.EVL)
 				.disposeAfterExecution(true)
 				.withModelPostfix(".xmi");

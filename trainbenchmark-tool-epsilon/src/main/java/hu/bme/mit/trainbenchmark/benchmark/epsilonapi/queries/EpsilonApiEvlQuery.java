@@ -46,7 +46,7 @@ public class EpsilonApiEvlQuery<TPatternMatch extends EpsilonMatch, TDriver exte
 		InputStream resource = EpsilonApiEvlQuery.class.getResourceAsStream(evlScriptName);
 		File resourceFile = EpsilonApiUtil.getResourceAsFile(resource);
 		if (resourceFile == null) {
-			logger.error("Error creating file for EVLScript resource " + evlScriptName);
+			logger.error("Error creating file for EVLScript resource " + evlScriptName + ". Resource was " + resource);
 			throw new IllegalStateException("Error creating file for EVLScript resource");
 		}
 		logger.info("Creating engine");
