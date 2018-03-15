@@ -4,8 +4,10 @@ import hu.bme.mit.trainbenchmark.benchmark.epsilonapi.driver.EpsilonDriver;
 import hu.bme.mit.trainbenchmark.benchmark.epsilonapi.matches.EpsilonMatch;
 import hu.bme.mit.trainbenchmark.benchmark.epsilonapi.util.EpsilonApiUtil;
 import hu.bme.mit.trainbenchmark.benchmark.operations.ModelTransformation;
+import hu.bme.mit.trainbenchmark.constants.TrainBenchmarkConstants;
 import org.eclipse.epsilon.engine.standalone.EpsilonStandaloneEngineFactory;
 import org.eclipse.epsilon.engine.standalone.eol.EolStandaloneEngine;
+import org.eclipse.epsilon.eol.execute.context.Variable;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -31,6 +33,7 @@ public class EpsilonApiEolTransformation<TMatch extends EpsilonMatch, TDriver ex
 
 	@Override
 	public void activate(Collection<TMatch> tMatches) throws Exception {
+		logger.info("Model Transformation activated");
 		InputStream resource = EpsilonApiEolQuery.class.getResourceAsStream(eolScriptName);
 		File resourceFile = EpsilonApiUtil.getResourceAsFile(resource);
 		if (resourceFile == null) {
@@ -40,9 +43,13 @@ public class EpsilonApiEolTransformation<TMatch extends EpsilonMatch, TDriver ex
 		logger.info("Creating engine");
 		EolStandaloneEngine engine = EpsilonStandaloneEngineFactory.EOL.getEngine();
 		engine.setScript(resourceFile.toPath());
+		engine.addParameter(Variable.createReadOnlyVariable("DEFAULT_SEGMENT_LENGTH", TrainBenchmarkConstants.DEFAULT_SEGMENT_LENGTH));
 		engine.addModel(getDriver().getModel());
 		engine.setOperationName(operationName);
-		engine.setOperationArguments(new ArrayList<>(tMatches));
+		ArrayList<Object> arguments = new ArrayList<>();
+		arguments.add(tMatches);
+		engine.setOperationArguments(arguments);
+		engine.setDisposeModels(false);
 		logger.info("Executing");
 		engine.execute();
 		engine.dispose();

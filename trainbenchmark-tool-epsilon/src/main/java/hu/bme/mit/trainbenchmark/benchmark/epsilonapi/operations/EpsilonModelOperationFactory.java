@@ -53,14 +53,14 @@ public class EpsilonModelOperationFactory<TDriver extends EpsilonDriver> extends
 		switch (operationEnum) {
 			// ConnectedSegments
 			case CONNECTEDSEGMENTS: {
-				logger.info("Executing CONNECTEDSEGMENTS");
+				logger.info("Creating operation for CONNECTEDSEGMENTS");
 				final EpsilonApiEvlQuery<EpsilonApiConnectedSegmentsMatch, TDriver> query =
 						new EpsilonApiEvlQuery<>(RailwayQuery.CONNECTEDSEGMENTS, driver, factory, "/queries/ConnectedSegments.evl", disposeAfterExecution);
 				final ModelOperation<EpsilonApiConnectedSegmentsMatch, TDriver> operation = ModelOperation.of(query);
 				return operation;
 			}
 			case CONNECTEDSEGMENTS_INJECT: {
-				logger.info("Executing CONNECTEDSEGMENTS_INJECT");
+				logger.info("Creating operation for CONNECTEDSEGMENTS_INJECT");
 				final EpsilonApiEolQuery<EpsilonApiConnectedSegmentsInjectMatch, TDriver> query =
 						new EpsilonApiEolQuery<>(RailwayQuery.CONNECTEDSEGMENTS_INJECT, driver, "/transformation/TransformOperations.eol", "ConnectedSegmentsInjectMatch");
 				final EpsilonApiEolTransformation<EpsilonApiConnectedSegmentsInjectMatch, TDriver> transformation =
@@ -69,7 +69,7 @@ public class EpsilonModelOperationFactory<TDriver extends EpsilonDriver> extends
 				return operation;
 			}
 			case CONNECTEDSEGMENTS_REPAIR: {
-				logger.info("Executing CONNECTEDSEGMENTS_REPAIR");
+				logger.info("Creating operation for CONNECTEDSEGMENTS_REPAIR");
 				final EpsilonApiEvlQuery<EpsilonApiConnectedSegmentsMatch, TDriver> query =
 						new EpsilonApiEvlQuery<>(RailwayQuery.CONNECTEDSEGMENTS, driver, factory, "/queries/ConnectedSegments.evl", disposeAfterExecution);
 				final EpsilonApiEolTransformation<EpsilonApiConnectedSegmentsMatch, TDriver> transformation =
@@ -80,14 +80,14 @@ public class EpsilonModelOperationFactory<TDriver extends EpsilonDriver> extends
 
 			// PosLength
 			case POSLENGTH: {
-				logger.info("Executing POSLENGTH");
+				logger.info("Creating operation for POSLENGTH");
 				final EpsilonApiEvlQuery<EpsilonApiConnectedSegmentsMatch, TDriver> query =
 					new EpsilonApiEvlQuery<>(RailwayQuery.POSLENGTH, driver, factory, "/queries/PosLength.evl", disposeAfterExecution);
 				final ModelOperation<EpsilonApiConnectedSegmentsMatch, TDriver> operation = ModelOperation.of(query);
 				return operation;
 			}
 			case POSLENGTH_INJECT: {
-				logger.info("Executing POSLENGTH_INJECT");
+				logger.info("Creating operation for POSLENGTH_INJECT");
 				final EpsilonApiEolQuery<EpsilonApiConnectedSegmentsInjectMatch, TDriver> query =
 					new EpsilonApiEolQuery<>(RailwayQuery.POSLENGTH_INJECT, driver, "/transformation/TransformOperations.eol", "PosLengthInjectMatch");
 				final EpsilonApiEolTransformation<EpsilonApiConnectedSegmentsInjectMatch, TDriver> transformation =
@@ -96,7 +96,7 @@ public class EpsilonModelOperationFactory<TDriver extends EpsilonDriver> extends
 				return operation;
 			}
 			case POSLENGTH_REPAIR: {
-				logger.info("Executing POSLENGTH_REPAIR");
+				logger.info("Creating operation for POSLENGTH_REPAIR");
 				final EpsilonApiEvlQuery<EpsilonApiConnectedSegmentsMatch, TDriver> query =
 					new EpsilonApiEvlQuery<>(RailwayQuery.POSLENGTH, driver, factory, "/queries/PosLength.evl", disposeAfterExecution);
 				final EpsilonApiEolTransformation<EpsilonApiConnectedSegmentsMatch, TDriver> transformation =
@@ -107,14 +107,14 @@ public class EpsilonModelOperationFactory<TDriver extends EpsilonDriver> extends
 
 			// RouteSensor
 			case ROUTESENSOR: {
-				logger.info("Executing ROUTESENSOR");
+				logger.info("Creating operation for ROUTESENSOR");
 				final EpsilonApiEvlQuery<EpsilonApiConnectedSegmentsMatch, TDriver> query =
 					new EpsilonApiEvlQuery<>(RailwayQuery.ROUTESENSOR, driver, factory, "/queries/RouteSensor.evl", disposeAfterExecution);
 				final ModelOperation<EpsilonApiConnectedSegmentsMatch, TDriver> operation = ModelOperation.of(query);
 				return operation;
 			}
 			case ROUTESENSOR_INJECT: {
-				logger.info("Executing ROUTESENSOR_INJECT");
+				logger.info("Creating operation for ROUTESENSOR_INJECT");
 				final EpsilonApiEolQuery<EpsilonApiConnectedSegmentsInjectMatch, TDriver> query =
 					new EpsilonApiEolQuery<>(RailwayQuery.ROUTESENSOR_INJECT, driver, "/transformation/TransformOperations.eol", "RouteSensorInjectMatch");
 				final EpsilonApiEolTransformation<EpsilonApiConnectedSegmentsInjectMatch, TDriver> transformation =
@@ -123,7 +123,7 @@ public class EpsilonModelOperationFactory<TDriver extends EpsilonDriver> extends
 				return operation;
 			}
 			case ROUTESENSOR_REPAIR: {
-				logger.info("Executing ROUTESENSOR_REPAIR");
+				logger.info("Creating operation for ROUTESENSOR_REPAIR");
 				final EpsilonApiEvlQuery<EpsilonApiConnectedSegmentsMatch, TDriver> query =
 					new EpsilonApiEvlQuery<>(RailwayQuery.ROUTESENSOR, driver, factory, "/queries/RouteSensor.evl", disposeAfterExecution);
 				final EpsilonApiEolTransformation<EpsilonApiConnectedSegmentsMatch, TDriver> transformation =
@@ -134,14 +134,14 @@ public class EpsilonModelOperationFactory<TDriver extends EpsilonDriver> extends
 
 			// SemaphoreNeighbor
 			case SEMAPHORENEIGHBOR: {
-				logger.info("Executing SEMAPHORENEIGHBOR");
+				logger.info("Creating operation for SEMAPHORENEIGHBOR");
 				final EpsilonApiEvlQuery<EpsilonApiConnectedSegmentsMatch, TDriver> query =
 					new EpsilonApiEvlQuery<>(RailwayQuery.SEMAPHORENEIGHBOR, driver, factory, "/queries/SemaphoreNeighbor.evl", disposeAfterExecution);
 				final ModelOperation<EpsilonApiConnectedSegmentsMatch, TDriver> operation = ModelOperation.of(query);
 				return operation;
 			}
 			case SEMAPHORENEIGHBOR_INJECT: {
-				logger.info("Executing SEMAPHORENEIGHBOR_INJECT");
+				logger.info("Creating operation for SEMAPHORENEIGHBOR_INJECT");
 				final EpsilonApiEolQuery<EpsilonApiConnectedSegmentsInjectMatch, TDriver> query =
 					new EpsilonApiEolQuery<>(RailwayQuery.SEMAPHORENEIGHBOR_INJECT, driver, "/transformation/TransformOperations.eol", "SemaphoreNeighborInjectMatch");
 				final EpsilonApiEolTransformation<EpsilonApiConnectedSegmentsInjectMatch, TDriver> transformation =
@@ -150,7 +150,7 @@ public class EpsilonModelOperationFactory<TDriver extends EpsilonDriver> extends
 				return operation;
 			}
 			case SEMAPHORENEIGHBOR_REPAIR: {
-				logger.info("Executing SEMAPHORENEIGHBOR_REPAIR");
+				logger.info("Creating operation for SEMAPHORENEIGHBOR_REPAIR");
 				final EpsilonApiEvlQuery<EpsilonApiConnectedSegmentsMatch, TDriver> query =
 					new EpsilonApiEvlQuery<>(RailwayQuery.SEMAPHORENEIGHBOR, driver, factory, "/queries/SemaphoreNeighbor.evl", disposeAfterExecution);
 				final EpsilonApiEolTransformation<EpsilonApiConnectedSegmentsMatch, TDriver> transformation =
@@ -162,14 +162,14 @@ public class EpsilonModelOperationFactory<TDriver extends EpsilonDriver> extends
 
 			// SwitchMonitored
 			case SWITCHMONITORED: {
-				logger.info("Executing SWITCHMONITORED");
+				logger.info("Creating operation for SWITCHMONITORED");
 				final EpsilonApiEvlQuery<EpsilonApiConnectedSegmentsMatch, TDriver> query =
 					new EpsilonApiEvlQuery<>(RailwayQuery.SWITCHMONITORED, driver, factory, "/queries/SwitchMonitored.evl", disposeAfterExecution);
 				final ModelOperation<EpsilonApiConnectedSegmentsMatch, TDriver> operation = ModelOperation.of(query);
 				return operation;
 			}
 			case SWITCHMONITORED_INJECT: {
-				logger.info("Executing SWITCHMONITORED_INJECT");
+				logger.info("Creating operation for SWITCHMONITORED_INJECT");
 				final EpsilonApiEolQuery<EpsilonApiConnectedSegmentsInjectMatch, TDriver> query =
 					new EpsilonApiEolQuery<>(RailwayQuery.SWITCHMONITORED_INJECT, driver, "/transformation/TransformOperations.eol", "SwitchMonitoredInjectMatch");
 				final EpsilonApiEolTransformation<EpsilonApiConnectedSegmentsInjectMatch, TDriver> transformation =
@@ -178,7 +178,7 @@ public class EpsilonModelOperationFactory<TDriver extends EpsilonDriver> extends
 				return operation;
 			}
 			case SWITCHMONITORED_REPAIR: {
-				logger.info("Executing SWITCHMONITORED_REPAIR");
+				logger.info("Creating operation for SWITCHMONITORED_REPAIR");
 				final EpsilonApiEvlQuery<EpsilonApiConnectedSegmentsMatch, TDriver> query =
 					new EpsilonApiEvlQuery<>(RailwayQuery.SWITCHMONITORED, driver, factory, "/queries/SwitchMonitored.evl", disposeAfterExecution);
 				final EpsilonApiEolTransformation<EpsilonApiConnectedSegmentsMatch, TDriver> transformation =
@@ -190,14 +190,14 @@ public class EpsilonModelOperationFactory<TDriver extends EpsilonDriver> extends
 
 			// SwitchSet
 			case SWITCHSET: {
-				logger.info("Executing SWITCHSET");
+				logger.info("Creating operation for SWITCHSET");
 				final EpsilonApiEvlQuery<EpsilonApiConnectedSegmentsMatch, TDriver> query =
 					new EpsilonApiEvlQuery<>(RailwayQuery.SWITCHSET, driver, factory, "/queries/SwitchSet.evl", disposeAfterExecution);
 				final ModelOperation<EpsilonApiConnectedSegmentsMatch, TDriver> operation = ModelOperation.of(query);
 				return operation;
 			}
 			case SWITCHSET_INJECT: {
-				logger.info("Executing SWITCHSET_INJECT");
+				logger.info("Creating operation for SWITCHSET_INJECT");
 				final EpsilonApiEolQuery<EpsilonApiConnectedSegmentsInjectMatch, TDriver> query =
 					new EpsilonApiEolQuery<>(RailwayQuery.SWITCHSET_INJECT, driver, "/transformation/TransformOperations.eol", "SwitchSetInjectMatch");
 				final EpsilonApiEolTransformation<EpsilonApiConnectedSegmentsInjectMatch, TDriver> transformation =
@@ -206,7 +206,7 @@ public class EpsilonModelOperationFactory<TDriver extends EpsilonDriver> extends
 				return operation;
 			}
 			case SWITCHSET_REPAIR: {
-				logger.info("Executing SWITCHSET_REPAIR");
+				logger.info("Creating operation for SWITCHSET_REPAIR");
 				final EpsilonApiEvlQuery<EpsilonApiConnectedSegmentsMatch, TDriver> query =
 					new EpsilonApiEvlQuery<>(RailwayQuery.SWITCHSET, driver, factory, "/queries/SwitchSet.evl", disposeAfterExecution);
 				final EpsilonApiEolTransformation<EpsilonApiConnectedSegmentsMatch, TDriver> transformation =

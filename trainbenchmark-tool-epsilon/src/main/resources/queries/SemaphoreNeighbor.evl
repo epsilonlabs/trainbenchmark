@@ -11,25 +11,27 @@ context Route {
 	 * track elements (te1, te2) can be switches or segments.
 	 */
 	constraint SemaphoreNeighbor {
-		
+		guard : self.exit.isDefined()
 		check {
+		    self.~match = new Sequence();
+		    var pass = true;
 			var otherRoutes = Route.all.excluding(self);
 			for (sensor1 in self.requires) {
 				for (te1 in sensor1.monitors) {
 					for (te2 in te1.connectsTo) {
-						for (sensor2 in te2.monitoredBy) {
+					    for (sensor2 in te2.monitoredBy) {
 							var route2 = otherRoutes.selectOne(route2 |
-									route2.requires.includes(sensor2) and route2.entry <> self.exit
-									);
+									route2.requires.includes(sensor2) and (route2.entry <> self.exit)
+							    );
 							if (route2.isDefined()) {
-								self.~match = new Native("RouteSensorMatch")(self.exit, self, route2, sensor1, sensor2, te1, te2);
-								return false;
+							    self.~match.add(new Native("SemaphoreNeighborMatch")(self.exit, self, route2, sensor1, sensor2, te1, te2));
+								pass =  false;
 							}
 						}
 					}
 				}
 			}
-			return true;
+			return pass;
 		}
 	}
 }

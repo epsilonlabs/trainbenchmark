@@ -8,16 +8,19 @@ context Route {
      */
      guard: self.active and self.entry.isDefined()
      constraint SwitchSet {
+        guard : self.active and self.entry.isDefined()
         check {
+            self.~match = new Sequence();
+            var pass = true;
             if (self.entry.signal == Signal#GO) {
                 for (swP in self.follows) {
                     if (swP.target.currentPosition <> swP.position) {
-                        self.~match = new Native("SwitchSetMatch")(self.entry, self, swP, swP.target);
-                        return false;
+                        self.~match.add(new Native("SwitchSetMatch")(self.entry, self, swP, swP.target));
+                        pass = false;
                     }
                 }
             }
-            return true;
+            return pass;
         }
      }
 }

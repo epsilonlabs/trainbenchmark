@@ -9,7 +9,7 @@ operation ConnectedSegmentsInjectMatch() : Sequence {
                             if (not te3.monitoredBy.contains(sensor)) {
                                 continue;
                             }
-                            matches.add(new Native("ConnectedSegmentsInjectMatch")(sensor, segment1, segment3));
+                            matches.add(new Native("ConnectedSegmentsInjectMatch")(sensor, te1, te3));
                         }
                     }
                 }
@@ -22,18 +22,13 @@ operation ConnectedSegmentsInjectMatch() : Sequence {
 operation InjectConnectedSegments(matches : Sequence) {
     for (match in matches) {
         var segment2 = new Segment();
-        segment2.setLength(DEFAULT_SEGMENT_LENGTH);
-        // delete (segment1)-[:connectsTo]->(segment3)
-        match.getSegment1().getConnectsTo().remove(match.getSegment3());
-        // (segment1)-[:connectsTo]->(segment2)
-        match.getSegment1().getConnectsTo().add(segment2);
-        // (segment2)-[:connectsTo]->(segment3)
-        segment2.getConnectsTo().add(match.getSegment3());
-        // (segment2)-[:monitoredBy]->(sensor)
-        segment2.getMonitoredBy().add(match.getSensor());
-        // add the segment2 to a Region to ensure proper containment hierarchy
+        segment2.length = DEFAULT_SEGMENT_LENGTH;
+        match.getSegment1().connectsTo.remove(match.getSegment3());
+        match.getSegment1().connectsTo.add(segment2);
+        segment2.connectsTo.add(match.getSegment3());
+        segment2.monitoredBy.add(match.getSensor());
         var region = match.getSegment1().eContainer();
-        region.getElements().add(segment2);
+        region.elements.add(segment2);
     }
 }
 
@@ -46,7 +41,7 @@ operation RepairConnectedSegments(matches : Sequence) {
         segment1.connectsTo.remove(segment2);
         segment1.connectsTo.add(segment3);
         segment2.connectsTo.clear();
-        segment2.monitored.clear();
+        segment2.monitoredBy.clear();
         
     }
 }
@@ -57,15 +52,13 @@ operation PosLengthInjectMatch() : Sequence {
 
 operation InjectPosLength(matches : Sequence) {
     for (match in matches) {
-        match.getSegment().setLength(0);
+        match.getSegment().length = 0;
     }
 }
 
 operation RepairPosLength(matches : Sequence) {
     for (match in matches) {
-        var segment = match.getSegment();
-        var newLength = -segment.getLength() + 1;
-        segment.setLength(newLength);
+        match.getSegment().length = DEFAULT_SEGMENT_LENGTH;
     }
 }
 
@@ -73,7 +66,7 @@ operation RouteSensorInjectMatch() : Sequence {
     var matches = new Sequence();
     for (route in Route.all()) {
         for (sensor in route.requires) {
-            matches.add(new Native("RouteSensorInjectmatch")(sensor, sensor));              
+            matches.add(new Native("RouteSensorInjectMatch")(route, sensor));
         }
     }
     return matches;
@@ -81,26 +74,28 @@ operation RouteSensorInjectMatch() : Sequence {
 
 operation InjectRouteSensor(matches : Sequence) {
     for (match in matches) {
-        match.getRoute().getRequires().remove(match.getSensor());
+        match.getRoute().requires.remove(match.getSensor());
     }
 }
 
 operation RepairRouteSensor(matches : Sequence) {
     for (match in matches) {
-        match.route.requires.add(match.sensor);
+        match.getRoute().requires.add(match.sensor);
     }
 }
 
 operation SemaphoreNeighborInjectMatch() : Sequence {
     var matches = new Sequence();
+    Route.all.select(r | r.entry.isDefined()).forAll(r | matches.add(new Native("SemaphoreNeighborInjectMatch")(r, r.entry)));
+    /*
     for (route in Route.all) {
-        entry = route.entry;
+        var entry = route.entry;
         if (entry.isUndefined()) {
             continue;
         }
         matches.add(new Native("SemaphoreNeighborInjectMatch")(route, entry));
     }
-
+    */
     return matches;
 }
 
@@ -108,15 +103,16 @@ operation InjectSemaphoreNeighbor(matches : Sequence) {
     for (match in matches) {
         var route = match.getRoute();
         var semaphore = match.getSemaphore();
-        if (route.getEntry().equals(semaphore)) {
-            route.setEntry(null);
+        if (route.entry == semaphore) {
+            route.entry = null;
         }
     }
 }
 
 operation RepairSemaphoreNeighbor(matches : Sequence) {
     for (match in matches) {
-        match.getRoute2().setEntry(match.getSemaphore());
+        match.getSemaphore().println("Match semaphore ");
+        match.getRoute2().entry = match.getSemaphore();
     }
 }
 
@@ -126,31 +122,32 @@ operation SwitchMonitoredInjectMatch() : Sequence {
         
 operation InjectSwitchMonitored(matches : Sequence) {
     for (match in matches) {
-        match.getSw().getMonitoredBy().clear();
+        match.getSw().monitoredBy.clear();
     }
 }
 
 operation RepairSwitchMonitored(matches : Sequence) {
     for (match in matches) {
         var sensor = new Sensor;
-        match.sw.monitoredBy.add(sensor);
+        match.getSw().monitoredBy.add(sensor);
     }
 }
 
 operation SwitchSetInjectMatch () : Sequence {
-    return SwitchMonitoredInjectMatch();
+    return Switch.all.collect(sw | new Native("SwitchSetInjectMatch")(sw));
  }
 
 operation InjectSwitchSet(matches : Sequence) {
     for (match in matches) {
-        var  currentPosition = match.getSw().getCurrentPosition();
-        var newCurrentPosition = Position.get((currentPosition.ordinal() + 1).mod(Position.VALUES.size()));
-        match.getSw().setCurrentPosition(newCurrentPosition);
+        var currentPosition = match.getSw().currentPosition;
+        var posEnum = currentPosition.getEEnum();
+        var newCurrentPosition = posEnum.getEEnumLiteral((currentPosition.getValue() + 1).mod(posEnum.getELiterals().size()));
+        match.getSw().currentPosition = newCurrentPosition;
     }
 }
 
 operation RepairSwitchSet(matches : Sequence) {
     for (match in matches) {
-        match.sw.currentPosition = match.swP.position;
+        match.getSw().currentPosition = match.getSwP().position;
     }
 }

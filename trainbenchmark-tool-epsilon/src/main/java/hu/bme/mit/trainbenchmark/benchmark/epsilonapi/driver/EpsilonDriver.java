@@ -10,12 +10,13 @@ public class EpsilonDriver<T extends IModelBuilder> extends Driver {
 
 	private final T modelBuilder;
 	private final String postfix;
-	protected IModel model;
+	private IModel model;
 
 	public EpsilonDriver(T modelBuilder, String postfix) {
 		this.modelBuilder = modelBuilder;
 		this.postfix = postfix;
 	}
+
 
 	public IModel getModel() {
 		return model;
@@ -23,6 +24,7 @@ public class EpsilonDriver<T extends IModelBuilder> extends Driver {
 
 	@Override
 	public void read(String modelPath) throws Exception {
+		System.out.println("EpsilonDriver read");
 		modelBuilder
 			.withName("train")
 			.withModelUri(Paths.get(modelPath));

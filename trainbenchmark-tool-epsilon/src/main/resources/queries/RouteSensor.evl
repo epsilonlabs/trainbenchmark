@@ -12,17 +12,21 @@ context Route {
 		// The check is "weird" because the benchmark expects the partial circle
 		// Route->SwitchPosition->Switch->Sensor to be returned
 		check {
-			self.println("\n\nRoute ");
+		    self.~match = new Sequence();
+		    var pass = true;
 			for (swP in self.follows) {
 				var sw = swP.target;
-				for (s in sw.monitoredBy) {
-					if (self.requires.excludes(s)) {
-					    self.~match = new Native("RouteSensorMatch")(self, s, swP, sw);
-						return false;
+				if (sw.isUndefined()) {
+				    continue;
+				}
+				for (sensor2 in sw.monitoredBy) {
+					if (self.requires.excludes(sensor2)) {
+					    self.~match.add(new Native("RouteSensorMatch")(self, sensor2, swP, sw));
+						pass = false;
 					}
 				}
 			}
-			return true;
+			return pass;
 		}
 	}
 }

@@ -23,13 +23,7 @@ public class EpsilonApiTest extends TrainBenchmarkTest {
 	 */
 	@Override
 	protected BenchmarkResult runTest(final BenchmarkConfigBase bcb) throws Exception {
-		Path currentDir = Paths.get(".");
-		System.out.println(currentDir.toAbsolutePath());
-		//
 		Path metamodelFile = Paths.get("../trainbenchmark-format-emf-model/src/railway.ecore");
-		System.out.println(metamodelFile.normalize());
-		Path fullpath = currentDir.resolve(metamodelFile);
-		System.out.println(fullpath.normalize());
 		EpsilonApiBenchmarkConfigBuilder configBuilder = new EpsilonApiBenchmarkConfigBuilder()
 				.withModelBuilder(new EmfModelBuilder().withMetamodelPath(Paths.get(metamodelFile.toFile().getCanonicalPath())))
 				.withEvlFactory(EpsilonStandaloneEngineFactory.EVL)

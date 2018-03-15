@@ -7,8 +7,10 @@ import hu.bme.mit.trainbenchmark.benchmark.epsilonapi.util.EpsilonApiUtil;
 import hu.bme.mit.trainbenchmark.benchmark.epsilonapi.util.EpsilonMatchFactory;
 import hu.bme.mit.trainbenchmark.benchmark.operations.ModelQuery;
 import hu.bme.mit.trainbenchmark.constants.RailwayQuery;
+import hu.bme.mit.trainbenchmark.constants.TrainBenchmarkConstants;
 import org.eclipse.epsilon.engine.standalone.EpsilonStandaloneEngineFactory;
 import org.eclipse.epsilon.engine.standalone.evl.EvlStandaloneEngine;
+import org.eclipse.epsilon.eol.execute.context.Variable;
 import org.eclipse.epsilon.evl.execute.UnsatisfiedConstraint;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -19,6 +21,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Collections;
 import java.util.List;
 
 public class EpsilonApiEvlQuery<TPatternMatch extends EpsilonMatch, TDriver extends EpsilonDriver>
@@ -27,7 +30,6 @@ public class EpsilonApiEvlQuery<TPatternMatch extends EpsilonMatch, TDriver exte
 	private static final Logger logger = LoggerFactory.getLogger(EpsilonApiEvlQuery.class);
 
 	private EpsilonStandaloneEngineFactory factory;
-	private EvlStandaloneEngine engine;
 	private final String evlScriptName;
 	private final boolean disposeAfterExecution;
 
@@ -41,7 +43,7 @@ public class EpsilonApiEvlQuery<TPatternMatch extends EpsilonMatch, TDriver exte
 
 	@Override
 	public Collection<TPatternMatch> evaluate() throws Exception {
-		logger.info("Evaluating");
+		logger.info("Start evaluation");
 		final List<TPatternMatch> matches = new ArrayList<>();
 		InputStream resource = EpsilonApiEvlQuery.class.getResourceAsStream(evlScriptName);
 		File resourceFile = EpsilonApiUtil.getResourceAsFile(resource);
@@ -50,29 +52,37 @@ public class EpsilonApiEvlQuery<TPatternMatch extends EpsilonMatch, TDriver exte
 			throw new IllegalStateException("Error creating file for EVLScript resource");
 		}
 		logger.info("Creating engine");
-		engine = factory.getEngine();
+		EvlStandaloneEngine engine = factory.getEngine();
 		engine.addNativeDelegate(new EpsilonMatchFactory());
 		engine.setScript(resourceFile.toPath());
 		engine.addModel(getDriver().getModel());
+		engine.setDisposeModels(false);
 		logger.info("Executing");
 		engine.execute();
-		for (UnsatisfiedConstraint unsatisfiedConstraint : engine.getUnsatisfiedConstraints()) {
+		Collection<UnsatisfiedConstraint> result = engine.getUnsatisfiedConstraints();
+		logger.info("The Evl Query returned " + result.size() + " matches.");
+		for (UnsatisfiedConstraint unsatisfiedConstraint : result) {
 			Object instance = unsatisfiedConstraint.getInstance();
-			System.out.println(instance);
+			logger.debug("Element " + instance + " did not satisfy " + unsatisfiedConstraint.getConstraint().getName());
 			Object match = engine.getModule().getContext().getExtendedProperties().getPropertyValue(instance, "match");
-			System.out.println(match);
-			matches.add((TPatternMatch) match);
+			logger.debug("Match created");
+			if (match instanceof Collection) {
+				matches.addAll((Collection<? extends TPatternMatch>) match);
+			}
+			else {
+				matches.add((TPatternMatch) match);
+			}
 		}
-		if (disposeAfterExecution) {
-			engine.dispose();
-		}
+		// We NEED to dispose the engine since it will be reused. However for incremental, we need it to
+		// remain active so it works incrementally. Perhaps what we need is a flag in the incremental
+		// so dispose is a "soft" dispose, which will be also used when execute() (and other setter methods )
+		// are reinvoked while live, so they don't change anything.
+		//if (disposeAfterExecution) {
+			//
+		engine.dispose();
+		//}
 		return matches;
 	}
 
-	public void dispose() {
-		if (engine != null) {
-			engine.dispose();
-		}
-	}
 
 }

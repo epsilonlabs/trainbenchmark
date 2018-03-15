@@ -14,7 +14,7 @@ context Sensor {
 				    // Find the first 5+ segment chain
 	               	var chain = s.closure(seg | seg.connectsTo.select(te : Segment | te.monitoredBy.includes(self)));
 	               	if (chain.size() >= 5) {
-                        self.~match = new Native("ConnectedSegmentsInjectMatch")(self, s, chain.at(0), chain.at(1), chain.at(2), chain.at(3), chain.at(3));
+                        self.~match = new Native("ConnectedSegmentsMatch")(self, s, chain.at(0), chain.at(1), chain.at(2), chain.at(3), chain.at(3));
 	               		return false;
 	               	}
 	            }

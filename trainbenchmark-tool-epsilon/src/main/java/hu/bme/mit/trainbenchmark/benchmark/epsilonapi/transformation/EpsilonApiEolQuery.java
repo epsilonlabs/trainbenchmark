@@ -34,6 +34,7 @@ public class EpsilonApiEolQuery<TPatternMatch extends EpsilonMatch, TDriver exte
 
 	@Override
 	public Collection<TPatternMatch> evaluate() throws Exception {
+		logger.info("Start evaluation");
 		final List<TPatternMatch> matches = new ArrayList<>();
 		InputStream resource = EpsilonApiEolQuery.class.getResourceAsStream(eolScriptName);
 		File resourceFile = EpsilonApiUtil.getResourceAsFile(resource);
@@ -41,14 +42,19 @@ public class EpsilonApiEolQuery<TPatternMatch extends EpsilonMatch, TDriver exte
 			logger.error("Error creating file for EOLScript resource " + eolScriptName);
 			throw new IllegalStateException("Error creating file for EOLScript resource");
 		}
+		logger.info("Creating engine");
 		EolStandaloneEngine engine = EpsilonStandaloneEngineFactory.EOL.getEngine();
 		engine.addNativeDelegate(new EpsilonMatchFactory());
 		engine.setScript(resourceFile.toPath());
 		engine.addModel(getDriver().getModel());
 		engine.setOperationName(operationName);
+		engine.setDisposeModels(false);
+		logger.info("Executing");
 		engine.execute();
+		Collection<? extends TPatternMatch> result = (Collection<? extends TPatternMatch>) engine.getResult();
+		logger.info("The Eol Query returned " + result.size() + " matches.");
+		matches.addAll(result);
 		engine.dispose();
-		matches.addAll((Collection<? extends TPatternMatch>) engine.getResult());
 		return matches;
 	}
 }
