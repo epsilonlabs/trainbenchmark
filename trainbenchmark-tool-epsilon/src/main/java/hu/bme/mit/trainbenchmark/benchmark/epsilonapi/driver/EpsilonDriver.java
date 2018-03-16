@@ -27,7 +27,7 @@ public class EpsilonDriver<T extends IModelBuilder> extends Driver {
 		System.out.println("EpsilonDriver read");
 		modelBuilder
 			.withName("train")
-			.withModelUri(Paths.get(modelPath));
+			.withModelPath(Paths.get(modelPath));
 		model = modelBuilder.build();
 		model.load();
 	}
