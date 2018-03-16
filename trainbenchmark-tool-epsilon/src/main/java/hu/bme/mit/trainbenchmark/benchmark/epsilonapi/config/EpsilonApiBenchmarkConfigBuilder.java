@@ -12,7 +12,12 @@ package hu.bme.mit.trainbenchmark.benchmark.epsilonapi.config;
 
 import hu.bme.mit.trainbenchmark.benchmark.config.BenchmarkConfigBuilder;
 import org.eclipse.epsilon.engine.standalone.EpsilonStandaloneEngineFactory;
+import org.eclipse.epsilon.engine.standalone.model.EmfModelBuilder;
 import org.eclipse.epsilon.engine.standalone.model.IModelBuilder;
+
+import java.io.IOException;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 
 
 /**
@@ -38,29 +43,25 @@ public class EpsilonApiBenchmarkConfigBuilder
 	 * Provide the EpsilonStandaloneEngineFactory that is used to create the EVL module
 	 * @param engineFactory
 	 */
-	public EpsilonApiBenchmarkConfigBuilder withEvlFactory(EpsilonStandaloneEngineFactory engineFactory) {
-		this.engineFactory = engineFactory;
+	public EpsilonApiBenchmarkConfigBuilder withEvlFactory(String engineFactory) {
+		this.engineFactory = EpsilonStandaloneEngineFactory.valueOf(engineFactory);
 		return this;
 	}
 
 	/**
-	 * Provide the specific Model Builder to use
-	 * @param modelBuilder
+	 * Use the EmfModelBuilder
 	 */
-	public EpsilonApiBenchmarkConfigBuilder withModelBuilder(IModelBuilder modelBuilder) {
-		this.modelBuilder = modelBuilder;
+	public EpsilonApiBenchmarkConfigBuilder withEmfModel() {
+		Path metamodelFile = Paths.get("../trainbenchmark-format-emf-model/src/railway.ecore");
+		try {
+			this.modelBuilder = new EmfModelBuilder().withMetamodelPath(Paths.get(metamodelFile.toFile().getCanonicalPath()));
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		postfix = ".xmi";
 		return this;
 	}
 
-	/**
-	 * Provide a postFix to identify models that can be loaded with the provided Model Builder.
-	 * @param postfix
-	 * @return
-	 */
-	public EpsilonApiBenchmarkConfigBuilder withModelPostfix(String postfix) {
-		this.postfix = postfix;
-		return this;
-	}
 
 	/**
 	 * Determine if the EVL engine is disposed after execution. Should be false for incremental EVL.
