@@ -16,7 +16,10 @@ import hu.bme.mit.trainbenchmark.benchmark.viatra.config.ViatraBackend
 import hu.bme.mit.trainbenchmark.benchmark.viatra.config.ViatraBenchmarkConfigBuilder
 import hu.bme.mit.trainbenchmark.config.ExecutionConfig
 import hu.bme.mit.trainbenchmark.constants.RailwayOperation
-import hu.bme.mit.trainbenchmark.neo4j.config.Neo4jGraphFormat;
+import hu.bme.mit.trainbenchmark.neo4j.config.Neo4jGraphFormat
+
+import java.nio.file.Paths
+
 
 println('Please remember to stop all other Java processes.')
 println()
@@ -60,6 +63,10 @@ def tools = [
         new TinkerGraphBenchmarkConfigBuilder(),
         new ViatraBenchmarkConfigBuilder().setBackend(ViatraBackend.INCREMENTAL),
         new ViatraBenchmarkConfigBuilder().setBackend(ViatraBackend.LOCAL_SEARCH),
+		new EpsilonApiBenchmarkConfigBuilder()
+				.withModelBuilder(new EmfModelBuilder().withMetamodelPath(Paths.get(metamodelFile.toFile().getCanonicalPath())))
+				.withEvlFactory(EpsilonStandaloneEngineFactory.EVL)
+				.disposeAfterExecution(true),
 ]
 
 def workloads = [
