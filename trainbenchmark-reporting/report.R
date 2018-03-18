@@ -94,7 +94,14 @@ for (workload in workloads) {
   xlabels = paste(xbreaks, "\n", currentWorkloadSizes, sep = "")
 
   # drop every other models size
-  evens = seq(2, log2(max(df$Model)), by=2)
+  max_size = max(df$Model)
+  if (max_size > 2) {
+    evens = seq(2, log2(max(df$Model)), by=2)
+  }
+  else {
+    evens = seq(1, 2, by=1)
+  }
+
   xlabels[evens] = ""
 
   # y axis labels

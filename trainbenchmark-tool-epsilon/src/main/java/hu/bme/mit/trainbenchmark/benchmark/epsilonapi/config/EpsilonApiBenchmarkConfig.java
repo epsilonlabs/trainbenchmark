@@ -37,7 +37,7 @@ public class EpsilonApiBenchmarkConfig extends BenchmarkConfig {
 
 	@Override
 	public String getToolName() {
-		return "Epsilon";
+		return String.format("Epsilon %s", engineFactory.name());
 	}
 
 	@Override

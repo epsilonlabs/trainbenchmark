@@ -69,8 +69,11 @@ task pathingJar(type: Jar) {
 }
 
 task benchmark(dependsOn: 'classes', type: JavaExec) {
-	main = 'BenchmarkScript'
-	classpath = sourceSets.main.runtimeClasspath
+    dependsOn pathingJar
+    main = 'BenchmarkScript'
+    doFirst {
+        classpath = files(sourceSets.main.output.files, pathingJar.archivePath)
+    }
 }
 
 task generate(dependsOn: 'classes', type: JavaExec) {
@@ -82,8 +85,11 @@ task generate(dependsOn: 'classes', type: JavaExec) {
 }
 
 task individualBenchmark(dependsOn: 'classes', type: JavaExec) {
+    dependsOn pathingJar
 	main = 'IndividualBenchmarkScript'
-	classpath = sourceSets.main.runtimeClasspath
+    doFirst {
+        classpath = files(sourceSets.main.output.files, pathingJar.archivePath)
+    }
 }
 
 generate.dependsOn(":trainbenchmark-generator-emf:shadowJar")
