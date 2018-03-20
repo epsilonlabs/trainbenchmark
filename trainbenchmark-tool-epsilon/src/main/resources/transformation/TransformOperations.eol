@@ -111,7 +111,7 @@ operation InjectSemaphoreNeighbor(matches : Sequence) {
 
 operation RepairSemaphoreNeighbor(matches : Sequence) {
     for (match in matches) {
-        match.getSemaphore().println("Match semaphore ");
+        match.getSemaphore();
         match.getRoute2().entry = match.getSemaphore();
     }
 }

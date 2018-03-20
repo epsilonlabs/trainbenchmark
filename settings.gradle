@@ -32,4 +32,5 @@ include ':trainbenchmark-tool-tinkergraph'
 include ':trainbenchmark-tool-viatra'
 include ':trainbenchmark-tool-viatra-patterns'
 include ':trainbenchmark-tool-epsilon'
+include ':trainbenchmark-tool-epsilon-evl-emf'
 

@@ -2,7 +2,7 @@ import hu.bme.mit.trainbenchmark.benchmark.config.BenchmarkConfigBaseBuilder
 import hu.bme.mit.trainbenchmark.benchmark.config.BenchmarkConfigBuilder
 import hu.bme.mit.trainbenchmark.benchmark.config.ModelSetConfig
 import hu.bme.mit.trainbenchmark.benchmark.emfapi.config.EmfApiBenchmarkConfigBuilder
-import hu.bme.mit.trainbenchmark.benchmark.epsilonapi.config.EpsilonApiBenchmarkConfigBuilder
+import hu.bme.mit.trainbenchmark.benchmark.epsilon.config.EpsilonApiBenchmarkConfigBuilder
 import hu.bme.mit.trainbenchmark.benchmark.jena.config.JenaBenchmarkConfigBuilder
 import hu.bme.mit.trainbenchmark.benchmark.mysql.config.MySqlBenchmarkConfigBuilder
 import hu.bme.mit.trainbenchmark.benchmark.neo4j.config.Neo4jBenchmarkConfigBuilder

@@ -16,6 +16,7 @@ deps/
 diagrams/*
 .idea
 log/
+logs/
 catalog-v*.xml
 .RData
 .Rproj.user
@@ -34,7 +35,7 @@ catalog-v*.xml
 .gradle
 build/
 
-# Ignore Gradle GUI config
+# Ignore Gradle GUI hu.bme.mit.trainbenchmark.benchmark.epsilon.config
 gradle-app.setting
 
 # Avoid ignoring Gradle wrapper jar file (.jar files are usually ignored)
@@ -57,3 +58,5 @@ out/
 classes/
 
 deployed-content/
+
+
