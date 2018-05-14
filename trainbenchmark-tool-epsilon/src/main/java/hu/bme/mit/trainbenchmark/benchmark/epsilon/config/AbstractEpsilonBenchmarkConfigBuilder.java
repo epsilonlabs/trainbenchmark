@@ -12,8 +12,10 @@ package hu.bme.mit.trainbenchmark.benchmark.epsilon.config;
 
 import hu.bme.mit.trainbenchmark.benchmark.config.BenchmarkConfig;
 import hu.bme.mit.trainbenchmark.benchmark.config.BenchmarkConfigBuilder;
+import hu.bme.mit.trainbenchmark.benchmark.epsilon.util.EngineFinder;
 import org.eclipse.epsilon.engine.standalone.EpsilonStandaloneEngineFactory;
 import org.eclipse.epsilon.engine.standalone.evl.EvlStandaloneEngine;
+import org.eclipse.epsilon.engine.standalone.evl.IEvlStandaloneEngine;
 import org.eclipse.epsilon.engine.standalone.model.EmfModelBuilder;
 import org.eclipse.epsilon.engine.standalone.model.IModelBuilder;
 import org.slf4j.Logger;
@@ -29,39 +31,18 @@ import java.nio.file.Paths;
  * benchmark different EVL implementations. It also allows a specific Epsilon EMC driver to
  * be used to for the benchmark.
  */
-public abstract class AbstractEpsilonBenchmarkConfigBuilder<TEngineFactory extends EpsilonStandaloneEngineFactory, MBenchmarkConfig extends BenchmarkConfig>
-	extends BenchmarkConfigBuilder<MBenchmarkConfig, AbstractEpsilonBenchmarkConfigBuilder<TEngineFactory, MBenchmarkConfig>> {
+public abstract class AbstractEpsilonBenchmarkConfigBuilder<MBenchmarkConfig extends BenchmarkConfig>
+	extends BenchmarkConfigBuilder<MBenchmarkConfig, AbstractEpsilonBenchmarkConfigBuilder<MBenchmarkConfig>> {
 
 	private static final Logger logger = LoggerFactory.getLogger(AbstractEpsilonBenchmarkConfigBuilder.class);
 
 	protected IModelBuilder modelBuilder;
-	protected TEngineFactory engineFactory;
 	protected String postfix;
 	protected boolean disposeAfterExecution;
-	protected String engineName;
+
 
 	/**
-	 * Provide the EpsilonStandaloneEngineFactory that is used to create the EVL Engine
-	 * @param engineFactory
-	 */
-	public AbstractEpsilonBenchmarkConfigBuilder withEngineFactory(TEngineFactory engineFactory) {
-		this.engineFactory = engineFactory;
-		return this;
-	}
 
-	/**
-	 * The name will be passed to the TEngineFactory#getEngine method to create the EVL Engine
-	 * @param name
-	 * @return
-	 */
-	public AbstractEpsilonBenchmarkConfigBuilder withEngineName(String name) {
-		this.engineName = name;
-		return this;
-	}
-
-	/**
-	 * Use the EmfModelBuilder
-	 */
 	public AbstractEpsilonBenchmarkConfigBuilder withEmfModel() {
 		Path metamodelFile = Paths.get("../trainbenchmark-format-emf-model/src/railway.ecore");
 		try {
@@ -78,9 +59,10 @@ public abstract class AbstractEpsilonBenchmarkConfigBuilder<TEngineFactory exten
 	 * Determine if the EVL engine is disposed after execution. Should be false for incremental EVL.
 	 * @param disposeAfterExecution
 	 * @return
-	 */
+	 *
 	public AbstractEpsilonBenchmarkConfigBuilder disposeAfterExecution(boolean disposeAfterExecution) {
 		this.disposeAfterExecution = disposeAfterExecution;
 		return this;
 	}
+	*/
 }

@@ -12,15 +12,13 @@ package hu.bme.mit.trainbenchmark.benchmark.epsilon;
 
 import hu.bme.mit.trainbenchmark.benchmark.config.BenchmarkConfig;
 import hu.bme.mit.trainbenchmark.benchmark.epsilon.config.EpsilonEvlEmfBenchmarkConfig;
-
-import java.io.FileInputStream;
-import java.io.ObjectInputStream;
+import hu.bme.mit.trainbenchmark.benchmark.epsilon.config.EpsilonIncrementalEvlEmfBenchmarkConfig;
 
 
 /**
- * The Class EpsilonEvlEmfBenchmarkMain.
+ * The Class EpsilonIncrementalEvlEmfBenchmarkMain.
  */
-public class EpsilonEvlEmfBenchmarkMain {
+public class EpsilonIncrementalEvlEmfBenchmarkMain {
 
 	/**
 	 * The main method.
@@ -29,8 +27,8 @@ public class EpsilonEvlEmfBenchmarkMain {
 	 * @throws Exception the exception
 	 */
 	public static void main(final String[] args) throws Exception {
-		final EpsilonEvlEmfBenchmarkConfig bc = BenchmarkConfig.fromFile(args[0], EpsilonEvlEmfBenchmarkConfig.class);
-		final EpsilonEvlEmfBenchmarkScenario scenario = new EpsilonEvlEmfBenchmarkScenario(bc);
+		final EpsilonIncrementalEvlEmfBenchmarkConfig bc = BenchmarkConfig.fromFile(args[0], EpsilonIncrementalEvlEmfBenchmarkConfig.class);
+		final EpsilonIncrementalEvlEmfBenchmarkScenario scenario = new EpsilonIncrementalEvlEmfBenchmarkScenario(bc);
 		scenario.performBenchmark();
 	}
 

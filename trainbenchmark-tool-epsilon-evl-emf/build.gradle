@@ -2,9 +2,13 @@ apply plugin: 'com.github.johnrengelman.shadow'
 
 shadowJar {
     classifier = 'fat'
-    manifest { attributes 'Main-Class': 'hu.bme.mit.trainbenchmark.benchmark.epsilon.EpsilonApiBenchmarkMain' }
+    manifest { attributes 'Main-Class': 'hu.bme.mit.trainbenchmark.benchmark.epsilon.EpsilonEvlEmfBenchmarkMain' }
 }
 
+configurations.all {
+    // Check for updates every build
+    resolutionStrategy.cacheChangingModulesFor 0, 'seconds'
+}
 
 dependencies {
     compile project(':trainbenchmark-tool')

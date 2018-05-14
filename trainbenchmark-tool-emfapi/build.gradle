@@ -5,6 +5,8 @@ shadowJar {
 	manifest { attributes 'Main-Class': 'hu.bme.mit.trainbenchmark.benchmark.emfapi.EmfApiBenchmarkMain' }
 }
 
+
+
 dependencies {
 	compile project(':trainbenchmark-tool-emf')
 }

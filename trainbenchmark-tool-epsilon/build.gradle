@@ -8,10 +8,11 @@ configurations.all {
 
 dependencies {
 	compile project(':trainbenchmark-tool')
-	compile group: 'org.eclipse.epsilon', name:'epsilon-core', version: '1.5.0-20180313.175208-354'
-    compile group: 'org.eclipse.epsilon', name:'epsilon-emf', version: '1.5.0-20180313.175218-317'
-    compile group: 'org.eclipse.epsilon', name:'org.eclipse.epsilon.standalone.engine', version: '0.0.4'
-	compile group: 'org.eclipse.epsilon', name:'org.eclipse.epsilon.standalone.engine.emf', version: '0.0.4'
+    compile project(':epsilon-incremental')
+	compile group: 'org.eclipse.epsilon', name:'epsilon-core', version: epsilonVersion
+    compile group: 'org.eclipse.epsilon', name:'epsilon-emf', version: epsilonVersion
+    compile group: 'org.eclipse.epsilon', name:'org.eclipse.epsilon.standalone.engine', version: '0.0.6'
+	compile group: 'org.eclipse.epsilon', name:'org.eclipse.epsilon.standalone.engine.emf', version: '0.0.6'
     runtime group: 'ch.qos.logback', name:'logback-classic', version: '1.0.9'
     runtime group: 'ch.qos.logback', name:'logback-core', version: '1.0.9'
 }

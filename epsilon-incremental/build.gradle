@@ -1,0 +1,19 @@
+apply plugin: 'com.github.johnrengelman.shadow'
+
+shadowJar {
+    classifier = 'fat'
+}
+
+configurations.all {
+    // Check for updates every build
+    resolutionStrategy.cacheChangingModulesFor 0, 'seconds'
+}
+
+
+dependencies {
+    compile group: 'org.eclipse.epsilon.incremental-evl', name:'org.eclipse.epsilon.base.engine.incremental', version: '1.0.0-SNAPSHOT'
+    compile group: 'org.eclipse.epsilon.incremental-evl', name:'org.eclipse.epsilon.evl.engine.incremental', version: '1.0.0-SNAPSHOT'
+    compile group: 'org.eclipse.epsilon.incremental-evl', name:'org.eclipse.epsilon.emc.emf.incremental', version: '1.5.0-SNAPSHOT'
+    compile group: 'org.eclipse.epsilon', name:'org.eclipse.epsilon.standalone.engine', version: '0.0.6'
+    compile group: 'org.eclipse.epsilon', name:'org.eclipse.epsilon.standalone.engine.emf', version: '0.0.6'
+}

@@ -11,7 +11,9 @@ import org.apache.commons.exec.Executor;
 import org.apache.commons.exec.PumpStreamHandler;
 
 import java.io.File;
+import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.ObjectOutputStream;
 
 public class BenchmarkRunner {
 
@@ -30,7 +32,6 @@ public class BenchmarkRunner {
 		final File configFile = File.createTempFile("trainbenchmark-benchmark-", ".conf");
 		final String configPath = configFile.getAbsolutePath();
 		bc.saveToFile(configPath);
-
 		final String projectName = String.format("trainbenchmark-tool-%s", bc.getProjectName());
 		final String jarPath = String.format("../%s/build/libs/%s-1.0.0-SNAPSHOT-fat.jar %s", projectName, projectName,
 				configPath);

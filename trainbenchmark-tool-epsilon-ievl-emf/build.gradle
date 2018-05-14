@@ -1,0 +1,17 @@
+apply plugin: 'com.github.johnrengelman.shadow'
+
+shadowJar {
+    classifier = 'fat'
+    manifest { attributes 'Main-Class': 'hu.bme.mit.trainbenchmark.benchmark.epsilon.EpsilonIncrementalEvlEmfBenchmarkMain' }
+}
+
+configurations.all {
+    // Check for updates every build
+    resolutionStrategy.cacheChangingModulesFor 0, 'seconds'
+}
+
+dependencies {
+    compile project(':trainbenchmark-tool-epsilon-evl-emf')
+    compile project(':epsilon-incremental')
+    compile group: 'ch.qos.logback', name: 'logback-classic', version: '1.+'
+}

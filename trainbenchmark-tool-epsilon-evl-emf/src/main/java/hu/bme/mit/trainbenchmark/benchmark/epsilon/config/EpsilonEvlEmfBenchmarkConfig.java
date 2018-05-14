@@ -12,28 +12,37 @@ package hu.bme.mit.trainbenchmark.benchmark.epsilon.config;
 
 import hu.bme.mit.trainbenchmark.benchmark.config.BenchmarkConfig;
 import hu.bme.mit.trainbenchmark.benchmark.config.BenchmarkConfigBase;
+import hu.bme.mit.trainbenchmark.benchmark.epsilon.util.EngineFinder;
 import org.eclipse.epsilon.engine.standalone.EpsilonStandaloneEngineFactory;
+import org.eclipse.epsilon.engine.standalone.evl.IEvlStandaloneEngine;
 import org.eclipse.epsilon.engine.standalone.model.IModelBuilder;
+
+import java.io.Serializable;
 
 /**
  * The Class EpsilonEvlEmfBenchmarkConfig.
  */
-public class EpsilonEvlEmfBenchmarkConfig extends BenchmarkConfig implements IEpsilonEvlBenchmarkConfig {
+public class EpsilonEvlEmfBenchmarkConfig extends BenchmarkConfig implements
+	IEpsilonEvlBenchmarkConfig<EngineFinder<IEvlStandaloneEngine, EpsilonStandaloneEngineFactory>>,
+	Serializable {
 
-	private final EpsilonStandaloneEngineFactory engineFactory;
+
+	private static final long serialVersionUID = 7869345265666795529L;
 	private final IModelBuilder modelBuilder;
 	private final String postfix;
 	private final boolean disposeAfterExecution;
-	private String engineName;
+	private final EngineFinder<IEvlStandaloneEngine, EpsilonStandaloneEngineFactory> engineFinder;
 
 	public EpsilonEvlEmfBenchmarkConfig(BenchmarkConfigBase configBase,
-										EpsilonStandaloneEngineFactory factory, IModelBuilder modelBuilder, String postfix, String engineName, boolean disposeAfterExecution) {
+										IModelBuilder modelBuilder,
+										String postfix,
+										boolean disposeAfterExecution,
+										EngineFinder<IEvlStandaloneEngine, EpsilonStandaloneEngineFactory> engineFinder) {
 		super(configBase);
-		this.engineFactory = factory;
 		this.modelBuilder = modelBuilder;
 		this.postfix = postfix;
 		this.disposeAfterExecution = disposeAfterExecution;
-		this.engineName = engineName;
+		this.engineFinder = engineFinder;
 	}
 
 	@Override
@@ -43,18 +52,13 @@ public class EpsilonEvlEmfBenchmarkConfig extends BenchmarkConfig implements IEp
 
 	@Override
 	public String getProjectName() {
-		return "epsilon";
+		return "epsilon-evl-emf";
 	}
 
 
 	@Override
 	public IModelBuilder getModelBuilder() {
 		return modelBuilder;
-	}
-
-	@Override
-	public EpsilonStandaloneEngineFactory getEngineFactory() {
-		return engineFactory;
 	}
 
 	@Override
@@ -67,7 +71,10 @@ public class EpsilonEvlEmfBenchmarkConfig extends BenchmarkConfig implements IEp
 		return disposeAfterExecution;
 	}
 
-	public String getEngineName() {
-		return engineName;
+	@Override
+	public EngineFinder<IEvlStandaloneEngine, EpsilonStandaloneEngineFactory> getEngineFinder() {
+		return engineFinder;
 	}
+
+
 }

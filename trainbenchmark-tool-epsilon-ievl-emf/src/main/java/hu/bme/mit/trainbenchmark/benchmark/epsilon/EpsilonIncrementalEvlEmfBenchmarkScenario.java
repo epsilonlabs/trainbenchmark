@@ -11,7 +11,7 @@
 package hu.bme.mit.trainbenchmark.benchmark.epsilon;
 
 import hu.bme.mit.trainbenchmark.benchmark.epsilon.comparators.EpsilonMatchComparator;
-import hu.bme.mit.trainbenchmark.benchmark.epsilon.config.EpsilonEvlEmfBenchmarkConfig;
+import hu.bme.mit.trainbenchmark.benchmark.epsilon.config.EpsilonIncrementalEvlEmfBenchmarkConfig;
 import hu.bme.mit.trainbenchmark.benchmark.epsilon.driver.EpsilonDriver;
 import hu.bme.mit.trainbenchmark.benchmark.epsilon.driver.EpsilonDriverFactory;
 import hu.bme.mit.trainbenchmark.benchmark.epsilon.matches.EpsilonMatch;
@@ -19,11 +19,12 @@ import hu.bme.mit.trainbenchmark.benchmark.epsilon.operations.EpsilonEvlModelOpe
 import hu.bme.mit.trainbenchmark.benchmark.phases.BenchmarkScenario;
 
 // TODO: Auto-generated Javadoc
+
 /**
- * The Class EpsilonEvlEmfBenchmarkScenario.
+ * The Class EpsilonIncrementalEvlEmfBenchmarkScenario.
  */
-public class EpsilonEvlEmfBenchmarkScenario
-		extends BenchmarkScenario<EpsilonMatch, EpsilonDriver, EpsilonEvlEmfBenchmarkConfig> {
+public class EpsilonIncrementalEvlEmfBenchmarkScenario
+		extends BenchmarkScenario<EpsilonMatch, EpsilonDriver, EpsilonIncrementalEvlEmfBenchmarkConfig> {
 
 	/**
 	 * Instantiates a new epsilon api benchmark scenario.
@@ -31,7 +32,7 @@ public class EpsilonEvlEmfBenchmarkScenario
 	 * @param bc the bc
 	 * @throws Exception the exception
 	 */
-	public EpsilonEvlEmfBenchmarkScenario(final EpsilonEvlEmfBenchmarkConfig bc) throws Exception {
+	public EpsilonIncrementalEvlEmfBenchmarkScenario(final EpsilonIncrementalEvlEmfBenchmarkConfig bc) throws Exception {
 		super(new EpsilonDriverFactory(bc),
 				new EpsilonEvlModelOperationFactory<>(bc.getEngineFinder()),
 				new EpsilonMatchComparator(), bc);

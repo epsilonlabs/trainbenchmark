@@ -1,0 +1,117 @@
+2018-05-14 11:31:25,176;hu.bme.mit.trainbenchmark.benchmark.epsilon.operations.EpsilonEvlModelOperationFactory.createOperation(EpsilonEvlModelOperationFactory.java:72);INFO;h.b.m.t.b.e.o.EpsilonEvlModelOperationFactory;Creating operation for CONNECTEDSEGMENTS_REPAIR 
+2018-05-14 11:31:25,248;hu.bme.mit.trainbenchmark.benchmark.epsilon.operations.EpsilonEvlModelOperationFactory.createOperation(EpsilonEvlModelOperationFactory.java:102);INFO;h.b.m.t.b.e.o.EpsilonEvlModelOperationFactory;Creating operation for POSLENGTH_REPAIR 
+2018-05-14 11:31:25,250;hu.bme.mit.trainbenchmark.benchmark.epsilon.operations.EpsilonEvlModelOperationFactory.createOperation(EpsilonEvlModelOperationFactory.java:133);INFO;h.b.m.t.b.e.o.EpsilonEvlModelOperationFactory;Creating operation for ROUTESENSOR_REPAIR 
+2018-05-14 11:31:25,252;hu.bme.mit.trainbenchmark.benchmark.epsilon.operations.EpsilonEvlModelOperationFactory.createOperation(EpsilonEvlModelOperationFactory.java:164);INFO;h.b.m.t.b.e.o.EpsilonEvlModelOperationFactory;Creating operation for SEMAPHORENEIGHBOR_REPAIR 
+2018-05-14 11:31:25,253;hu.bme.mit.trainbenchmark.benchmark.epsilon.operations.EpsilonEvlModelOperationFactory.createOperation(EpsilonEvlModelOperationFactory.java:228);INFO;h.b.m.t.b.e.o.EpsilonEvlModelOperationFactory;Creating operation for SWITCHSET_REPAIR 
+2018-05-14 11:31:25,254;hu.bme.mit.trainbenchmark.benchmark.epsilon.operations.EpsilonEvlModelOperationFactory.createOperation(EpsilonEvlModelOperationFactory.java:196);INFO;h.b.m.t.b.e.o.EpsilonEvlModelOperationFactory;Creating operation for SWITCHMONITORED_REPAIR 
+2018-05-14 11:31:25,969;org.eclipse.epsilon.evl.IncrementalEvlModule.execute(IncrementalEvlModule.java:165);INFO;o.e.e.evl.IncrementalEvlModule;Creaetig the EvlModuleTrace. 
+2018-05-14 11:31:25,971;org.eclipse.epsilon.evl.IncrementalEvlModule.execute(IncrementalEvlModule.java:172);INFO;o.e.e.evl.IncrementalEvlModule;Adding execution listeners 
+2018-05-14 11:31:25,972;org.eclipse.epsilon.evl.IncrementalEvlModule.execute(IncrementalEvlModule.java:178);INFO;o.e.e.evl.IncrementalEvlModule;Executing pre{} 
+2018-05-14 11:31:25,972;org.eclipse.epsilon.evl.IncrementalEvlModule.execute(IncrementalEvlModule.java:180);INFO;o.e.e.evl.IncrementalEvlModule;Executing contexts 
+2018-05-14 11:31:27,457;org.eclipse.epsilon.evl.IncrementalEvlModule.execute(IncrementalEvlModule.java:191);INFO;o.e.e.evl.IncrementalEvlModule;Executing post{} 
+2018-05-14 11:31:27,458;org.eclipse.epsilon.evl.IncrementalEvlModule.execute(IncrementalEvlModule.java:193);INFO;o.e.e.evl.IncrementalEvlModule;Persisting traces 
+2018-05-14 11:31:27,460;org.eclipse.epsilon.evl.IncrementalEvlModule.execute(IncrementalEvlModule.java:196);INFO;o.e.e.evl.IncrementalEvlModule;Going to live execution. 
+2018-05-14 11:31:27,466;org.eclipse.epsilon.evl.IncrementalEvlModule.listenToModelChanges(IncrementalEvlModule.java:228);INFO;o.e.e.evl.IncrementalEvlModule;Listening to model changes 
+2018-05-14 11:31:27,471;org.eclipse.epsilon.evl.IncrementalEvlModule.listenToModelChanges(IncrementalEvlModule.java:238);INFO;o.e.e.evl.IncrementalEvlModule;Resgitering with model train to recieve notifications. 
+2018-05-14 11:31:27,500;org.eclipse.epsilon.evl.IncrementalEvlModule.execute(IncrementalEvlModule.java:165);INFO;o.e.e.evl.IncrementalEvlModule;Creaetig the EvlModuleTrace. 
+2018-05-14 11:31:27,501;org.eclipse.epsilon.evl.IncrementalEvlModule.execute(IncrementalEvlModule.java:172);INFO;o.e.e.evl.IncrementalEvlModule;Adding execution listeners 
+2018-05-14 11:31:27,502;org.eclipse.epsilon.evl.IncrementalEvlModule.execute(IncrementalEvlModule.java:178);INFO;o.e.e.evl.IncrementalEvlModule;Executing pre{} 
+2018-05-14 11:31:27,502;org.eclipse.epsilon.evl.IncrementalEvlModule.execute(IncrementalEvlModule.java:180);INFO;o.e.e.evl.IncrementalEvlModule;Executing contexts 
+2018-05-14 11:31:30,249;org.eclipse.epsilon.evl.IncrementalEvlModule.execute(IncrementalEvlModule.java:191);INFO;o.e.e.evl.IncrementalEvlModule;Executing post{} 
+2018-05-14 11:31:30,249;org.eclipse.epsilon.evl.IncrementalEvlModule.execute(IncrementalEvlModule.java:193);INFO;o.e.e.evl.IncrementalEvlModule;Persisting traces 
+2018-05-14 11:31:30,250;org.eclipse.epsilon.evl.IncrementalEvlModule.execute(IncrementalEvlModule.java:196);INFO;o.e.e.evl.IncrementalEvlModule;Going to live execution. 
+2018-05-14 11:31:30,250;org.eclipse.epsilon.evl.IncrementalEvlModule.listenToModelChanges(IncrementalEvlModule.java:228);INFO;o.e.e.evl.IncrementalEvlModule;Listening to model changes 
+2018-05-14 11:31:30,250;org.eclipse.epsilon.evl.IncrementalEvlModule.listenToModelChanges(IncrementalEvlModule.java:238);INFO;o.e.e.evl.IncrementalEvlModule;Resgitering with model train to recieve notifications. 
+2018-05-14 11:31:30,261;org.eclipse.epsilon.evl.IncrementalEvlModule.execute(IncrementalEvlModule.java:165);INFO;o.e.e.evl.IncrementalEvlModule;Creaetig the EvlModuleTrace. 
+2018-05-14 11:31:30,262;org.eclipse.epsilon.evl.IncrementalEvlModule.execute(IncrementalEvlModule.java:172);INFO;o.e.e.evl.IncrementalEvlModule;Adding execution listeners 
+2018-05-14 11:31:30,262;org.eclipse.epsilon.evl.IncrementalEvlModule.execute(IncrementalEvlModule.java:178);INFO;o.e.e.evl.IncrementalEvlModule;Executing pre{} 
+2018-05-14 11:31:30,262;org.eclipse.epsilon.evl.IncrementalEvlModule.execute(IncrementalEvlModule.java:180);INFO;o.e.e.evl.IncrementalEvlModule;Executing contexts 
+2018-05-14 11:31:30,389;org.eclipse.epsilon.evl.IncrementalEvlModule.execute(IncrementalEvlModule.java:191);INFO;o.e.e.evl.IncrementalEvlModule;Executing post{} 
+2018-05-14 11:31:30,389;org.eclipse.epsilon.evl.IncrementalEvlModule.execute(IncrementalEvlModule.java:193);INFO;o.e.e.evl.IncrementalEvlModule;Persisting traces 
+2018-05-14 11:31:30,390;org.eclipse.epsilon.evl.IncrementalEvlModule.execute(IncrementalEvlModule.java:196);INFO;o.e.e.evl.IncrementalEvlModule;Going to live execution. 
+2018-05-14 11:31:30,398;org.eclipse.epsilon.evl.IncrementalEvlModule.listenToModelChanges(IncrementalEvlModule.java:228);INFO;o.e.e.evl.IncrementalEvlModule;Listening to model changes 
+2018-05-14 11:31:30,399;org.eclipse.epsilon.evl.IncrementalEvlModule.listenToModelChanges(IncrementalEvlModule.java:238);INFO;o.e.e.evl.IncrementalEvlModule;Resgitering with model train to recieve notifications. 
+2018-05-14 11:31:30,415;org.eclipse.epsilon.evl.IncrementalEvlModule.execute(IncrementalEvlModule.java:165);INFO;o.e.e.evl.IncrementalEvlModule;Creaetig the EvlModuleTrace. 
+2018-05-14 11:31:30,416;org.eclipse.epsilon.evl.IncrementalEvlModule.execute(IncrementalEvlModule.java:172);INFO;o.e.e.evl.IncrementalEvlModule;Adding execution listeners 
+2018-05-14 11:31:30,416;org.eclipse.epsilon.evl.IncrementalEvlModule.execute(IncrementalEvlModule.java:178);INFO;o.e.e.evl.IncrementalEvlModule;Executing pre{} 
+2018-05-14 11:31:30,417;org.eclipse.epsilon.evl.IncrementalEvlModule.execute(IncrementalEvlModule.java:180);INFO;o.e.e.evl.IncrementalEvlModule;Executing contexts 
+2018-05-14 11:31:31,534;org.eclipse.epsilon.evl.IncrementalEvlModule.execute(IncrementalEvlModule.java:191);INFO;o.e.e.evl.IncrementalEvlModule;Executing post{} 
+2018-05-14 11:31:31,534;org.eclipse.epsilon.evl.IncrementalEvlModule.execute(IncrementalEvlModule.java:193);INFO;o.e.e.evl.IncrementalEvlModule;Persisting traces 
+2018-05-14 11:31:31,535;org.eclipse.epsilon.evl.IncrementalEvlModule.execute(IncrementalEvlModule.java:196);INFO;o.e.e.evl.IncrementalEvlModule;Going to live execution. 
+2018-05-14 11:31:31,535;org.eclipse.epsilon.evl.IncrementalEvlModule.listenToModelChanges(IncrementalEvlModule.java:228);INFO;o.e.e.evl.IncrementalEvlModule;Listening to model changes 
+2018-05-14 11:31:31,535;org.eclipse.epsilon.evl.IncrementalEvlModule.listenToModelChanges(IncrementalEvlModule.java:238);INFO;o.e.e.evl.IncrementalEvlModule;Resgitering with model train to recieve notifications. 
+2018-05-14 11:31:31,541;org.eclipse.epsilon.evl.IncrementalEvlModule.execute(IncrementalEvlModule.java:165);INFO;o.e.e.evl.IncrementalEvlModule;Creaetig the EvlModuleTrace. 
+2018-05-14 11:31:31,542;org.eclipse.epsilon.evl.IncrementalEvlModule.execute(IncrementalEvlModule.java:172);INFO;o.e.e.evl.IncrementalEvlModule;Adding execution listeners 
+2018-05-14 11:31:31,542;org.eclipse.epsilon.evl.IncrementalEvlModule.execute(IncrementalEvlModule.java:178);INFO;o.e.e.evl.IncrementalEvlModule;Executing pre{} 
+2018-05-14 11:31:31,542;org.eclipse.epsilon.evl.IncrementalEvlModule.execute(IncrementalEvlModule.java:180);INFO;o.e.e.evl.IncrementalEvlModule;Executing contexts 
+2018-05-14 11:31:31,550;org.eclipse.epsilon.evl.IncrementalEvlModule.execute(IncrementalEvlModule.java:191);INFO;o.e.e.evl.IncrementalEvlModule;Executing post{} 
+2018-05-14 11:31:31,550;org.eclipse.epsilon.evl.IncrementalEvlModule.execute(IncrementalEvlModule.java:193);INFO;o.e.e.evl.IncrementalEvlModule;Persisting traces 
+2018-05-14 11:31:31,551;org.eclipse.epsilon.evl.IncrementalEvlModule.execute(IncrementalEvlModule.java:196);INFO;o.e.e.evl.IncrementalEvlModule;Going to live execution. 
+2018-05-14 11:31:31,551;org.eclipse.epsilon.evl.IncrementalEvlModule.listenToModelChanges(IncrementalEvlModule.java:228);INFO;o.e.e.evl.IncrementalEvlModule;Listening to model changes 
+2018-05-14 11:31:31,551;org.eclipse.epsilon.evl.IncrementalEvlModule.listenToModelChanges(IncrementalEvlModule.java:238);INFO;o.e.e.evl.IncrementalEvlModule;Resgitering with model train to recieve notifications. 
+2018-05-14 11:31:31,555;org.eclipse.epsilon.evl.IncrementalEvlModule.execute(IncrementalEvlModule.java:165);INFO;o.e.e.evl.IncrementalEvlModule;Creaetig the EvlModuleTrace. 
+2018-05-14 11:31:31,555;org.eclipse.epsilon.evl.IncrementalEvlModule.execute(IncrementalEvlModule.java:172);INFO;o.e.e.evl.IncrementalEvlModule;Adding execution listeners 
+2018-05-14 11:31:31,556;org.eclipse.epsilon.evl.IncrementalEvlModule.execute(IncrementalEvlModule.java:178);INFO;o.e.e.evl.IncrementalEvlModule;Executing pre{} 
+2018-05-14 11:31:31,556;org.eclipse.epsilon.evl.IncrementalEvlModule.execute(IncrementalEvlModule.java:180);INFO;o.e.e.evl.IncrementalEvlModule;Executing contexts 
+2018-05-14 11:31:31,565;org.eclipse.epsilon.evl.IncrementalEvlModule.execute(IncrementalEvlModule.java:191);INFO;o.e.e.evl.IncrementalEvlModule;Executing post{} 
+2018-05-14 11:31:31,566;org.eclipse.epsilon.evl.IncrementalEvlModule.execute(IncrementalEvlModule.java:193);INFO;o.e.e.evl.IncrementalEvlModule;Persisting traces 
+2018-05-14 11:31:31,566;org.eclipse.epsilon.evl.IncrementalEvlModule.execute(IncrementalEvlModule.java:196);INFO;o.e.e.evl.IncrementalEvlModule;Going to live execution. 
+2018-05-14 11:31:31,566;org.eclipse.epsilon.evl.IncrementalEvlModule.listenToModelChanges(IncrementalEvlModule.java:228);INFO;o.e.e.evl.IncrementalEvlModule;Listening to model changes 
+2018-05-14 11:31:31,567;org.eclipse.epsilon.evl.IncrementalEvlModule.listenToModelChanges(IncrementalEvlModule.java:238);INFO;o.e.e.evl.IncrementalEvlModule;Resgitering with model train to recieve notifications. 
+2018-05-14 11:31:31,695;org.eclipse.epsilon.evl.IncrementalEvlModule.onChange(IncrementalEvlModule.java:257);INFO;o.e.e.evl.IncrementalEvlModule;On Change event for org.eclipse.emf.ecore.impl.DynamicEObjectImpl@3cfdd820 (eClass: org.eclipse.emf.ecore.impl.EClassImpl@7d20d0b (name: Segment) (instanceClassName: null) (abstract: false, interface: false)) with property length 
+2018-05-14 11:31:31,715;org.eclipse.epsilon.evl.IncrementalEvlModule.onChange(IncrementalEvlModule.java:257);INFO;o.e.e.evl.IncrementalEvlModule;On Change event for org.eclipse.emf.ecore.impl.DynamicEObjectImpl@125290e5 (eClass: org.eclipse.emf.ecore.impl.EClassImpl@7d20d0b (name: Segment) (instanceClassName: null) (abstract: false, interface: false)) with property length 
+2018-05-14 11:31:31,719;org.eclipse.epsilon.evl.IncrementalEvlModule.onChange(IncrementalEvlModule.java:257);INFO;o.e.e.evl.IncrementalEvlModule;On Change event for org.eclipse.emf.ecore.impl.DynamicEObjectImpl@3f1c5af9 (eClass: org.eclipse.emf.ecore.impl.EClassImpl@7d20d0b (name: Segment) (instanceClassName: null) (abstract: false, interface: false)) with property length 
+2018-05-14 11:31:31,722;org.eclipse.epsilon.evl.IncrementalEvlModule.onChange(IncrementalEvlModule.java:257);INFO;o.e.e.evl.IncrementalEvlModule;On Change event for org.eclipse.emf.ecore.impl.DynamicEObjectImpl@30bcf3c1 (eClass: org.eclipse.emf.ecore.impl.EClassImpl@7d20d0b (name: Segment) (instanceClassName: null) (abstract: false, interface: false)) with property length 
+2018-05-14 11:31:31,726;org.eclipse.epsilon.evl.IncrementalEvlModule.onChange(IncrementalEvlModule.java:257);INFO;o.e.e.evl.IncrementalEvlModule;On Change event for org.eclipse.emf.ecore.impl.DynamicEObjectImpl@1046d517 (eClass: org.eclipse.emf.ecore.impl.EClassImpl@7d20d0b (name: Segment) (instanceClassName: null) (abstract: false, interface: false)) with property length 
+2018-05-14 11:31:31,730;org.eclipse.epsilon.evl.IncrementalEvlModule.onChange(IncrementalEvlModule.java:257);INFO;o.e.e.evl.IncrementalEvlModule;On Change event for org.eclipse.emf.ecore.impl.DynamicEObjectImpl@64c63c79 (eClass: org.eclipse.emf.ecore.impl.EClassImpl@7d20d0b (name: Segment) (instanceClassName: null) (abstract: false, interface: false)) with property length 
+2018-05-14 11:31:31,734;org.eclipse.epsilon.evl.IncrementalEvlModule.onChange(IncrementalEvlModule.java:257);INFO;o.e.e.evl.IncrementalEvlModule;On Change event for org.eclipse.emf.ecore.impl.DynamicEObjectImpl@11f0a5a1 (eClass: org.eclipse.emf.ecore.impl.EClassImpl@7d20d0b (name: Segment) (instanceClassName: null) (abstract: false, interface: false)) with property length 
+2018-05-14 11:31:31,753;org.eclipse.epsilon.evl.IncrementalEvlModule.onChange(IncrementalEvlModule.java:257);INFO;o.e.e.evl.IncrementalEvlModule;On Change event for org.eclipse.emf.ecore.impl.DynamicEObjectImpl@2228db21 (eClass: org.eclipse.emf.ecore.impl.EClassImpl@8297b3a (name: Route) (instanceClassName: null) (abstract: false, interface: false)) with property requires 
+2018-05-14 11:31:31,771;org.eclipse.epsilon.evl.IncrementalEvlModule.onChange(IncrementalEvlModule.java:257);INFO;o.e.e.evl.IncrementalEvlModule;On Change event for org.eclipse.emf.ecore.impl.DynamicEObjectImpl@36453307 (eClass: org.eclipse.emf.ecore.impl.EClassImpl@8297b3a (name: Route) (instanceClassName: null) (abstract: false, interface: false)) with property entry 
+2018-05-14 11:31:31,816;org.eclipse.epsilon.evl.IncrementalEvlModule.execute(IncrementalEvlModule.java:154);INFO;o.e.e.evl.IncrementalEvlModule;Execution is Live. 
+2018-05-14 11:31:31,820;org.eclipse.epsilon.evl.IncrementalEvlModule.execute(IncrementalEvlModule.java:154);INFO;o.e.e.evl.IncrementalEvlModule;Execution is Live. 
+2018-05-14 11:31:31,824;org.eclipse.epsilon.evl.IncrementalEvlModule.execute(IncrementalEvlModule.java:154);INFO;o.e.e.evl.IncrementalEvlModule;Execution is Live. 
+2018-05-14 11:31:31,831;org.eclipse.epsilon.evl.IncrementalEvlModule.execute(IncrementalEvlModule.java:154);INFO;o.e.e.evl.IncrementalEvlModule;Execution is Live. 
+2018-05-14 11:31:31,835;org.eclipse.epsilon.evl.IncrementalEvlModule.execute(IncrementalEvlModule.java:154);INFO;o.e.e.evl.IncrementalEvlModule;Execution is Live. 
+2018-05-14 11:31:31,838;org.eclipse.epsilon.evl.IncrementalEvlModule.execute(IncrementalEvlModule.java:154);INFO;o.e.e.evl.IncrementalEvlModule;Execution is Live. 
+2018-05-14 11:31:31,921;org.eclipse.epsilon.evl.IncrementalEvlModule.execute(IncrementalEvlModule.java:154);INFO;o.e.e.evl.IncrementalEvlModule;Execution is Live. 
+2018-05-14 11:31:31,924;org.eclipse.epsilon.evl.IncrementalEvlModule.execute(IncrementalEvlModule.java:154);INFO;o.e.e.evl.IncrementalEvlModule;Execution is Live. 
+2018-05-14 11:31:31,927;org.eclipse.epsilon.evl.IncrementalEvlModule.execute(IncrementalEvlModule.java:154);INFO;o.e.e.evl.IncrementalEvlModule;Execution is Live. 
+2018-05-14 11:31:31,932;org.eclipse.epsilon.evl.IncrementalEvlModule.execute(IncrementalEvlModule.java:154);INFO;o.e.e.evl.IncrementalEvlModule;Execution is Live. 
+2018-05-14 11:31:31,936;org.eclipse.epsilon.evl.IncrementalEvlModule.execute(IncrementalEvlModule.java:154);INFO;o.e.e.evl.IncrementalEvlModule;Execution is Live. 
+2018-05-14 11:31:31,939;org.eclipse.epsilon.evl.IncrementalEvlModule.execute(IncrementalEvlModule.java:154);INFO;o.e.e.evl.IncrementalEvlModule;Execution is Live. 
+2018-05-14 11:31:32,037;org.eclipse.epsilon.evl.IncrementalEvlModule.execute(IncrementalEvlModule.java:154);INFO;o.e.e.evl.IncrementalEvlModule;Execution is Live. 
+2018-05-14 11:31:32,043;org.eclipse.epsilon.evl.IncrementalEvlModule.execute(IncrementalEvlModule.java:154);INFO;o.e.e.evl.IncrementalEvlModule;Execution is Live. 
+2018-05-14 11:31:32,049;org.eclipse.epsilon.evl.IncrementalEvlModule.execute(IncrementalEvlModule.java:154);INFO;o.e.e.evl.IncrementalEvlModule;Execution is Live. 
+2018-05-14 11:31:32,052;org.eclipse.epsilon.evl.IncrementalEvlModule.execute(IncrementalEvlModule.java:154);INFO;o.e.e.evl.IncrementalEvlModule;Execution is Live. 
+2018-05-14 11:31:32,055;org.eclipse.epsilon.evl.IncrementalEvlModule.execute(IncrementalEvlModule.java:154);INFO;o.e.e.evl.IncrementalEvlModule;Execution is Live. 
+2018-05-14 11:31:32,057;org.eclipse.epsilon.evl.IncrementalEvlModule.execute(IncrementalEvlModule.java:154);INFO;o.e.e.evl.IncrementalEvlModule;Execution is Live. 
+2018-05-14 11:31:32,122;org.eclipse.epsilon.evl.IncrementalEvlModule.execute(IncrementalEvlModule.java:154);INFO;o.e.e.evl.IncrementalEvlModule;Execution is Live. 
+2018-05-14 11:31:32,124;org.eclipse.epsilon.evl.IncrementalEvlModule.execute(IncrementalEvlModule.java:154);INFO;o.e.e.evl.IncrementalEvlModule;Execution is Live. 
+2018-05-14 11:31:32,126;org.eclipse.epsilon.evl.IncrementalEvlModule.execute(IncrementalEvlModule.java:154);INFO;o.e.e.evl.IncrementalEvlModule;Execution is Live. 
+2018-05-14 11:31:32,129;org.eclipse.epsilon.evl.IncrementalEvlModule.execute(IncrementalEvlModule.java:154);INFO;o.e.e.evl.IncrementalEvlModule;Execution is Live. 
+2018-05-14 11:31:32,133;org.eclipse.epsilon.evl.IncrementalEvlModule.execute(IncrementalEvlModule.java:154);INFO;o.e.e.evl.IncrementalEvlModule;Execution is Live. 
+2018-05-14 11:31:32,135;org.eclipse.epsilon.evl.IncrementalEvlModule.execute(IncrementalEvlModule.java:154);INFO;o.e.e.evl.IncrementalEvlModule;Execution is Live. 
+2018-05-14 11:31:32,178;org.eclipse.epsilon.evl.IncrementalEvlModule.execute(IncrementalEvlModule.java:154);INFO;o.e.e.evl.IncrementalEvlModule;Execution is Live. 
+2018-05-14 11:31:32,180;org.eclipse.epsilon.evl.IncrementalEvlModule.execute(IncrementalEvlModule.java:154);INFO;o.e.e.evl.IncrementalEvlModule;Execution is Live. 
+2018-05-14 11:31:32,188;org.eclipse.epsilon.evl.IncrementalEvlModule.execute(IncrementalEvlModule.java:154);INFO;o.e.e.evl.IncrementalEvlModule;Execution is Live. 
+2018-05-14 11:31:32,193;org.eclipse.epsilon.evl.IncrementalEvlModule.execute(IncrementalEvlModule.java:154);INFO;o.e.e.evl.IncrementalEvlModule;Execution is Live. 
+2018-05-14 11:31:32,199;org.eclipse.epsilon.evl.IncrementalEvlModule.execute(IncrementalEvlModule.java:154);INFO;o.e.e.evl.IncrementalEvlModule;Execution is Live. 
+2018-05-14 11:31:32,202;org.eclipse.epsilon.evl.IncrementalEvlModule.execute(IncrementalEvlModule.java:154);INFO;o.e.e.evl.IncrementalEvlModule;Execution is Live. 
+2018-05-14 11:31:32,274;org.eclipse.epsilon.evl.IncrementalEvlModule.execute(IncrementalEvlModule.java:154);INFO;o.e.e.evl.IncrementalEvlModule;Execution is Live. 
+2018-05-14 11:31:32,276;org.eclipse.epsilon.evl.IncrementalEvlModule.execute(IncrementalEvlModule.java:154);INFO;o.e.e.evl.IncrementalEvlModule;Execution is Live. 
+2018-05-14 11:31:32,289;org.eclipse.epsilon.evl.IncrementalEvlModule.execute(IncrementalEvlModule.java:154);INFO;o.e.e.evl.IncrementalEvlModule;Execution is Live. 
+2018-05-14 11:31:32,302;org.eclipse.epsilon.evl.IncrementalEvlModule.execute(IncrementalEvlModule.java:154);INFO;o.e.e.evl.IncrementalEvlModule;Execution is Live. 
+2018-05-14 11:31:32,307;org.eclipse.epsilon.evl.IncrementalEvlModule.execute(IncrementalEvlModule.java:154);INFO;o.e.e.evl.IncrementalEvlModule;Execution is Live. 
+2018-05-14 11:31:32,310;org.eclipse.epsilon.evl.IncrementalEvlModule.execute(IncrementalEvlModule.java:154);INFO;o.e.e.evl.IncrementalEvlModule;Execution is Live. 
+2018-05-14 11:31:32,371;org.eclipse.epsilon.evl.IncrementalEvlModule.execute(IncrementalEvlModule.java:154);INFO;o.e.e.evl.IncrementalEvlModule;Execution is Live. 
+2018-05-14 11:31:32,373;org.eclipse.epsilon.evl.IncrementalEvlModule.execute(IncrementalEvlModule.java:154);INFO;o.e.e.evl.IncrementalEvlModule;Execution is Live. 
+2018-05-14 11:31:32,385;org.eclipse.epsilon.evl.IncrementalEvlModule.execute(IncrementalEvlModule.java:154);INFO;o.e.e.evl.IncrementalEvlModule;Execution is Live. 
+2018-05-14 11:31:32,395;org.eclipse.epsilon.evl.IncrementalEvlModule.execute(IncrementalEvlModule.java:154);INFO;o.e.e.evl.IncrementalEvlModule;Execution is Live. 
+2018-05-14 11:31:32,399;org.eclipse.epsilon.evl.IncrementalEvlModule.execute(IncrementalEvlModule.java:154);INFO;o.e.e.evl.IncrementalEvlModule;Execution is Live. 
+2018-05-14 11:31:32,403;org.eclipse.epsilon.evl.IncrementalEvlModule.execute(IncrementalEvlModule.java:154);INFO;o.e.e.evl.IncrementalEvlModule;Execution is Live. 
+2018-05-14 11:31:32,475;org.eclipse.epsilon.evl.IncrementalEvlModule.execute(IncrementalEvlModule.java:154);INFO;o.e.e.evl.IncrementalEvlModule;Execution is Live. 
+2018-05-14 11:31:32,478;org.eclipse.epsilon.evl.IncrementalEvlModule.execute(IncrementalEvlModule.java:154);INFO;o.e.e.evl.IncrementalEvlModule;Execution is Live. 
+2018-05-14 11:31:32,493;org.eclipse.epsilon.evl.IncrementalEvlModule.execute(IncrementalEvlModule.java:154);INFO;o.e.e.evl.IncrementalEvlModule;Execution is Live. 
+2018-05-14 11:31:32,525;org.eclipse.epsilon.evl.IncrementalEvlModule.execute(IncrementalEvlModule.java:154);INFO;o.e.e.evl.IncrementalEvlModule;Execution is Live. 
+2018-05-14 11:31:32,529;org.eclipse.epsilon.evl.IncrementalEvlModule.execute(IncrementalEvlModule.java:154);INFO;o.e.e.evl.IncrementalEvlModule;Execution is Live. 
+2018-05-14 11:31:32,531;org.eclipse.epsilon.evl.IncrementalEvlModule.execute(IncrementalEvlModule.java:154);INFO;o.e.e.evl.IncrementalEvlModule;Execution is Live. 

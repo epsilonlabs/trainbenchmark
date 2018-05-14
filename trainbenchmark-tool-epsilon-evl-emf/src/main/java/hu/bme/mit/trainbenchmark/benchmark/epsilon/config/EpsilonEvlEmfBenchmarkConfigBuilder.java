@@ -10,7 +10,9 @@
  ******************************************************************************/
 package hu.bme.mit.trainbenchmark.benchmark.epsilon.config;
 
+import hu.bme.mit.trainbenchmark.benchmark.epsilon.util.EngineFinder;
 import org.eclipse.epsilon.engine.standalone.EpsilonStandaloneEngineFactory;
+import org.eclipse.epsilon.engine.standalone.evl.IEvlStandaloneEngine;
 import org.eclipse.epsilon.engine.standalone.model.EmfModelBuilder;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -26,14 +28,19 @@ import java.nio.file.Paths;
  * be used to for the benchmark.
  */
 public class EpsilonEvlEmfBenchmarkConfigBuilder
-		extends AbstractEpsilonBenchmarkConfigBuilder<EpsilonStandaloneEngineFactory, EpsilonEvlEmfBenchmarkConfig> {
+		extends AbstractEpsilonBenchmarkConfigBuilder<EpsilonEvlEmfBenchmarkConfig> {
 
 	private static final Logger logger = LoggerFactory.getLogger(EpsilonEvlEmfBenchmarkConfigBuilder.class);
+	private EngineFinder<IEvlStandaloneEngine,EpsilonStandaloneEngineFactory> engineFinder;
+
+	public EpsilonEvlEmfBenchmarkConfigBuilder() {
+		this.engineFinder = new EngineFinder<>(false, new EpsilonStandaloneEngineFactory(), "EVL");
+	}
 
 	@Override
 	public EpsilonEvlEmfBenchmarkConfig createConfig() {
 		checkNotNulls();
-		return new EpsilonEvlEmfBenchmarkConfig(configBase, engineFactory, modelBuilder, postfix, engineName, disposeAfterExecution);
+		return new EpsilonEvlEmfBenchmarkConfig(configBase, modelBuilder, postfix, disposeAfterExecution, engineFinder);
 	}
 
 	/**

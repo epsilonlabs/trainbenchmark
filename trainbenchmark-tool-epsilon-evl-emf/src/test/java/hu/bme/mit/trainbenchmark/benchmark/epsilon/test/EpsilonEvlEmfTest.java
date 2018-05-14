@@ -20,11 +20,9 @@ public class EpsilonEvlEmfTest extends TrainBenchmarkTest {
 	 */
 	@Override
 	protected BenchmarkResult runTest(final BenchmarkConfigBase bcb) throws Exception {
-		EpsilonEvlEmfBenchmarkConfigBuilder configBuilder = (EpsilonEvlEmfBenchmarkConfigBuilder) new EpsilonEvlEmfBenchmarkConfigBuilder()
-				.withEmfModel()
-				.withEngineFactory(new EpsilonStandaloneEngineFactory())
-				.withEngineName("EVL")
-				.disposeAfterExecution(true);
+		EpsilonEvlEmfBenchmarkConfigBuilder configBuilder = new EpsilonEvlEmfBenchmarkConfigBuilder()
+			.withEmfModel()
+			.disposeAfterExecution(true);
 		final EpsilonEvlEmfBenchmarkConfig bc = configBuilder.setConfigBase(bcb).createConfig();
 		final EpsilonEvlEmfBenchmarkScenario scenario = new EpsilonEvlEmfBenchmarkScenario(bc);
 		final BenchmarkResult result = scenario.performBenchmark();
