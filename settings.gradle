@@ -35,4 +35,5 @@ include ':trainbenchmark-tool-epsilon'
 include ':trainbenchmark-tool-epsilon-evl-emf'
 include ':trainbenchmark-tool-epsilon-ievl-emf'
 include 'epsilon-incremental'
+include 'trainbenchmark-jhm'
 

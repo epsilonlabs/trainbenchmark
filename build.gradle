@@ -20,6 +20,7 @@ subprojects {
 		maven { url "https://repo.eclipse.org/content/groups/viatra2" }
 		maven { url "https://oss.sonatype.org/content/repositories/snapshots" }
         maven { url "https://dl.bintray.com/epsilonlabs/epsilon-standalone" }
+		maven { url "http://localhost:8081/repository/maven-snapshots" }
 	}
 }
 
@@ -53,5 +54,5 @@ ext {
 	tinkerGraphVersion = '3.2.5'
 	viatraVersion = '1.6.1'
 	xtextVersion = '2.10.0'
-	epsilonVersion = '1.5.0-20180201.215443-239'
+	epsilonVersion = '1.5.0-20180511.143146-21'
 }
